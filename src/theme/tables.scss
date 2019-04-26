@@ -28,6 +28,10 @@
     border: 1px solid var(--theme-color);
     background-color: var(--theme-color);
     color: var(--text-color);
+
+    a {
+      color: var(--text-color);
+    }
   }
 }
 
