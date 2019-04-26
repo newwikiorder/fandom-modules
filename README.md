@@ -11,7 +11,7 @@ First, download a local version:
 git clone https://github.com/jacecotton/fandom-modules.git
 ```
 
-Edit the `src/` director only. The source code uses SASS with the SCSS syntax.
+Edit the `src/` directory only. The source code uses SASS with the SCSS syntax.
 
 Tell SASS to watch for any changes to the files and compile them to the `dist/` directory with the following command:
 
@@ -55,7 +55,7 @@ Some communities may wish to change aspects about certain modules. They can do t
 To make this as easy as possible, certain properties should be variablized to minimize the amount of code needed. For example, if one wished to import the styles for Template:Quote and then change the color of the quotation marks, the following CSS would be applied:
 
 ```css
-@import url("https://raw.githack.com/jacecotton/fandom-modules/master/dist/templates/quote.css");
+@import url("https://raw.githack.com/newwikiorder/fandom-modules/master/dist/templates/quote.css");
 
 :root {
   --pull-quote-mark-color: <new value here>;
