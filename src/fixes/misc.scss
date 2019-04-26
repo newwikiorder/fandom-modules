@@ -1,0 +1,52 @@
+/**
+ * Miscellaneous fixes to the Wikia skin. Generally, opinionated styles should not
+ * be put here, but rather obvious fixes to broken functionality, or glaring style
+ * issues.
+ */
+
+// Prevents references from increasing the leading.
+.reference {
+  line-height: 1;
+}
+
+// Prevents right-side main page section from overflowing.
+.main-page-tag-rcs {
+  margin-right: 2px;
+}
+
+// Highlights linked anchor targets.
+
+:target {
+  animation: highlight 3s ease;
+}
+
+@keyframes highlight {
+  0% {
+    background-color: var(--secondary-color);
+    color: var(--module-bg);
+  }
+
+  100% {
+    background-color: transparent;
+    color: var(--module-fg);
+  }
+}
+
+.WikiaArticle .references > li:target {
+  background-color: rgba(195, 227, 255, 0.5);
+}
+
+// Make bullet points round instead of square.
+.WikiaArticle ul {
+  list-style: disc;
+}
+
+// Allows `position: sticky` to work in article elements.
+.WikiaArticle {
+  overflow: initial !important;
+}
+
+// Weird bug with the Discord module.
+.wds-is-secondary.wds-button.wds-is-squished {
+  white-space: nowrap;
+}

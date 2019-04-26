@@ -1,0 +1,142 @@
+@import "../mixins";
+
+/**
+ * Accompanying CSS for Template:Navbox, its auxiliaries, and its implementations.
+ * FANDOM Developers entry: https://dev.fandom.com/wiki/Global_Lua_Modules/Navbox
+ * Lua module: https://dev.fandom.com/wiki/Module:Navbox
+ */
+
+.navbox {
+  @include module-style();
+  font-size: .75rem;
+  line-height: 23px;
+  overflow: hidden;
+  word-break: break-word;
+  hyphens: auto; // temp fix
+
+  .navbox-title {
+    background-color: var(--theme-color);
+    color: var(--text-color);
+    line-height: 23px;
+
+    a {
+      color: inherit !important;
+    }
+  }
+
+  .navbox-template-links {
+    top: 4px;
+  }
+
+  .navbox-group {
+    background-color: var(--secondary-color);
+    text-align: center;
+    vertical-align: middle;
+    border: 1px solid var(--secondary-color);
+    border-bottom-color: var(--module-bg);
+  }
+
+  .navbox-subgroup {
+    background-color: var(--module-bg);
+    width: 15%;
+    vertical-align: middle;
+    text-align: center;
+  }
+
+  &-table {
+    border-collapse: collapse;
+  
+    &-layout .navbox-group {
+      width: 15%;
+    }
+  
+    .navbox-padding {
+      padding: 10px;
+    }
+  
+    .navbox-list {
+      border: 1px solid var(--medium-gray);
+      vertical-align: middle;
+    }
+  }
+
+  &-above,
+  &-footer,
+  &-header {
+    background-color: var(--secondary-color);
+  }
+
+  &.left {
+    clear: left;
+    float: left;
+    margin: 0 1.5em .5em 0;
+  }
+
+  &.right {
+    clear: right;
+    float: right;
+    margin: 0 0 .5em 1.5em;
+  }
+
+  &-image {
+    background-color: var(--module-bg);
+    border: 1px solid transparent;
+  }
+
+  &-content {
+    padding: 0 2px 3px 2px !important;
+  }
+
+  &-above,
+  &-base {
+    border-bottom: 1px solid var(--medium-gray);
+    padding: 4px !important;
+  }
+
+  &-above {
+    position: relative; // double-border bug fix
+  }
+
+  > .navbox-table-wrapper:first-child,
+  &-section > .navbox-table-wrapper:first-child {
+    margin-top: -6px;
+  }
+
+  &-content ul {
+    list-style: none !important;
+    margin: 0;
+    padding: 0;
+  }
+
+  &-list.\32-columns ul,
+  &-list.\33-columns ul,
+  &-list.\34-columns ul,
+  &-list.\35-columns ul {
+    column-rule: 4px double var(--medium-gray);
+    list-style-type: none;
+    margin: 0;
+  }
+
+  &-list.\32-columns ul {
+    column-count: 2;
+  }
+
+  &-list.\33-columns ul {
+    column-count: 3;
+  }
+
+  &-list.\34-columns ul {
+    column-count: 4;
+  }
+
+  &-list.\35-columns ul {
+    column-count: 5;
+  }
+
+  &-list.\32-columns ul li,
+  &-list.\33-columns ul li,
+  &-list.\34-columns ul li,
+  &-list.\35-columns ul li {
+    margin: 0;
+  }
+}

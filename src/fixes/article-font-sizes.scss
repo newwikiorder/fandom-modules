@@ -1,0 +1,10 @@
+// Set the font size of article text back to MediaWiki's default.
+
+@media (min-width: 1596px) {
+  // High specificity here to override Qualaroo defaults.
+  // Qualaroo selector: `.WikiaPage .WikiaArticle`
+  .WikiaPage .WikiaArticle {
+    font-size: .9rem;
+    line-height: 1.8;
+  }
+}

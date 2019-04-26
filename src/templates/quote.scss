@@ -1,0 +1,83 @@
+/**
+ * Accompanying CSS for Template:Quote.
+ * FANDOM Developers entry: https://dev.fandom.com/wiki/Global_Lua_Modules/Quote
+ * Lua module: https://dev.fandom.com/wiki/Module:Quote
+ */
+
+// Configurable properties.
+:root {
+  --pull-quote-max-width: 80%;
+  --pull-quote-text-color: rgba(0, 0, 0, .8);
+  --pull-quote-mark-color: rgba(0, 0, 0, .15);
+  --pull-quote-mark-font: "Times New Roman", serif;
+  --pull-quote-hyphens: auto;
+  --pull-quote-frame-color: #bbb;
+}
+
+// High specificity here to override Qualaroo defaults.
+// Qualaroo selector: `.WikiaPage blockquote`
+.WikiaPage .pull-quote {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: var(--pull-quote-max-width);
+  margin: 1em auto;
+  font-size: 1em;
+  line-height: 1.8;
+}
+
+// Child elements don't require same specificity, so it's taken out here.
+.pull-quote {
+  &__text {
+    position: relative;
+    padding: 0 2em;
+    hyphens: var(--pull-quote-hyphens);
+    color: var(--pull-quote-text-color);
+
+    &::before,
+    &::after {
+      position: absolute;
+      font-size: 3em;
+      font-family: var(--pull-quote-mark-font);
+      font-weight: 700;
+      color: var(--pull-quote-mark-color);
+    }
+
+    &::before {
+      content: "“";
+      top: 0;
+      left: 0;
+      line-height: 1;
+    }
+
+    &::after {
+      content: "”";
+      bottom: 0;
+      right: 0;
+      line-height: .2;
+    }
+  }
+
+  &__source {
+    margin-left: auto;
+  }
+
+  &--right,
+  &--left {
+    border: 1px solid var(--pull-quote-frame-color);
+    border-left: 0;
+    border-right: 0;
+    padding: 1em 0;
+    text-align: justify;
+  }
+
+  &--right {
+    float: right;
+    margin: 1em 0 1em 1em;
+  }
+
+  &--left {
+    float: left;
+    margin: 1em 1em 1em 0;
+  }
+}

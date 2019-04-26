@@ -1,0 +1,88 @@
+@import "../mixins";
+
+/**
+ * Accompanying CSS for Template:Mbox.
+ * FANDOM Developers entry: https://dev.fandom.com/wiki/Global_Lua_Modules/Mbox
+ * Lua module: https://dev.fandom.com/wiki/Module:Mbox
+ */
+
+.mbox {
+  @include module-style();
+  display: flex;
+  position: relative;
+  border-left-width: 8px;
+  border-radius: 3px;
+  margin-bottom: 5px;
+  min-height: 32px;
+
+  &__content {
+    display: table;
+    width: 100%;
+    padding: 8px 15px;
+
+    &__image {
+      display: table-cell;
+      width: 40px;
+      height: 100%;
+      text-align: center;
+      vertical-align: middle;
+      padding-right: 15px;
+    }
+
+    &__wrapper {
+      display: table-cell;
+      vertical-align: middle;
+    }
+
+    &__header {
+      display: block;
+      font-weight: bold;
+    }
+
+    &__text {
+      display: block;
+
+      &__comment {
+        font-size: .85rem;
+      }
+    }
+
+    &__aside {
+      display: table-cell;
+      width: 100px;
+      vertical-align: middle;
+      text-align: center;
+      padding-left: 15px;
+      border: 1px solid var(--medium-gray);
+    }
+  }
+
+  &__close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 2px 7px;
+    font-weight: bold;
+    font-size: 1rem;
+    color: #bbb;
+    cursor: pointer;
+    transition: color .15s ease-in;
+
+    &:hover {
+      color: var(--module-fg);
+    }
+
+    &::after {
+      content: "×";
+    }
+  }
+}
+
+.mw-collapsed + .mbox__close {
+  transform: rotate(45deg);
+  padding: 4px 7px 5px 2px;
+}
+
+.filepage-table .mbox__content__wrapper {
+  padding: 8px 15px;
+}

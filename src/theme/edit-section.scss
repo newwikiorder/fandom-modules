@@ -1,0 +1,21 @@
+// [edit] links to the right of section headers.
+
+.editsection {
+  float: right !important;
+  text-transform: lowercase;
+  font-size: 14px !important;
+
+  a img {
+    display: none;
+  }
+
+  &::before {
+    display: inline;
+    content: '[';
+  }
+
+  &::after {
+    display: inline;
+    content: ']';
+  }
+}

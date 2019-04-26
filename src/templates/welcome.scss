@@ -1,0 +1,13 @@
+@import "../mixins";
+
+/**
+ * Accompanying CSS for Template:Welcome.
+ */
+
+.welcome-message {
+  @include module-style();
+  padding: 2rem;
+  box-sizing: border-box;
+  font-size: 13px;
+  line-height: 23px;
+}

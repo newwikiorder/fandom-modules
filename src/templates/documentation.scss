@@ -1,0 +1,85 @@
+@import "../mixins";
+
+/**
+ * Accompanying CSS for Template:Documentation and Template:Docparam.
+ * Project Wiki entry: https://important.wikia.com/wiki/Template:Documentation
+ *  https://important.wikia.com/wiki/Template:Docparam
+ */
+
+.documentation {
+  @include module-style();
+  overflow: hidden;
+
+  &__header,
+  &__footer {
+    padding: 0 1rem;
+    box-sizing: border-box;
+    line-height: 3;
+    background-color: var(--module-bg-secondary);
+  }
+
+  &__header {
+    border-bottom: 1px solid var(--medium-gray);
+
+    &__headline {
+      font-weight: bold;
+    }
+
+    &__action-links {
+      float: right;
+      font-size: .85rem;
+    }
+  }
+
+  &__footer {
+    border-top: 1px solid var(--medium-gray);
+    font-size: .85rem;
+    text-align: right;
+    clear: both;
+  }
+
+  &__content {
+    padding: 1rem;
+    box-sizing: border-box;
+  }
+
+  #toc {
+    margin-top: 0;
+    margin-bottom: 6px;
+  }
+}
+
+.docparam {
+  @include module-style();
+  overflow: hidden;
+  margin-bottom: 1rem;
+
+  &__header {
+    border-bottom: 1px solid var(--medium-gray);
+    background-color: var(--module-bg-secondary);
+    padding: 0 5px;
+    box-sizing: border-box;
+
+    &__icon {
+      display: inline-block;
+    }
+
+    &__name {
+      display: inline-block;
+      position: relative;
+      top: 2px;
+    }
+
+    &__default {
+      float: right;
+      line-height: 2.5;
+      font-size: .9rem;
+      color: var(--module-fg);
+    }
+  }
+
+  &__description {
+    padding: 1rem;
+    box-sizing: border-box;
+  }
+}

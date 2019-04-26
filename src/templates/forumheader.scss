@@ -1,0 +1,11 @@
+@import "../mixins";
+
+/**
+ * Accompanying CSS for Template:Forumheader.
+ */
+
+.forumheader {
+  @include module-style();
+  padding: 10px;
+  margin-bottom: 10px;
+}

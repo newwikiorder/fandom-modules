@@ -1,0 +1,6 @@
+// Force the background to cover all of the screen.
+
+body.skin-oasis {
+  background-size: 100%; // fallback
+  background-size: cover;
+}

@@ -1,0 +1,34 @@
+/**
+ * This configuration file sets the defaults for basic colors. Variables that need to be exposed
+ * (usable outside of this stylesheet) should use CSS custom properties, while only internal
+ * variables (usable only inside this stylesheet) should use SASS variables.
+ */
+
+// Basic color variables
+$green: #2ea85e;
+$blue: #317ac5;
+$translucent: (
+  white: rgba(255, 255, 255, .7),
+  black: rgba(0, 0, 0, .7)
+);
+
+:root {
+  // Basic white/gray/black color variables.
+  // Only use as foregrounds on backgrounds that are neither dark or light, and vice versa.
+  --medium-gray: #d6d6d6;
+  --soft-black: #404040;
+  --soft-white: #f2f2f2;
+
+  // Background and foreground colors of reusable modules (infoboxes, mboxes, portals, etc.)
+  --module-bg: #{map-get($translucent, white)};
+  --module-bg-secondary: var(--soft-white);
+  --module-fg: #{map-get($translucent, black)};
+  --text-color: var(--module-fg); // This is to be used for text that has a --theme-color background color.
+
+  // Management colors
+  --type-important: rgba(200, 0, 0, .8); // dark translucent red
+  --type-moderate: rgba(233, 124, 47, .8); // dark translucent orange
+  --type-minor: rgba(241, 197, 37, .8); // dark translucent yellow
+  --type-policy: #{$green};
+  --type-guideline: #{$blue};
+}

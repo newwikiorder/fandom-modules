@@ -1,0 +1,55 @@
+// Modifications to the Wikia toolbar at the bottom.
+
+:root {
+  --wikia-bar-height: 30px;
+  --wikia-bar-link-color: var(--text-color);
+}
+
+.WikiaBarWrapper {
+  height: var(--wikia-bar-height);
+  box-shadow: none;
+  background: var(--theme-color);
+  color: var(--wikia-bar-link-color);
+  opacity: .5;
+  font-size: 1.15em;
+  transition: opacity .1s ease-in;
+
+  &:hover {
+    opacity: 1;
+  }
+
+  .wikia-bar {
+    background: none;
+    height: var(--wikia-bar-height);
+
+    .toolbar {
+      padding: 0;
+      height: var(--wikia-bar-height);
+
+      .tools > li {
+        line-height: var(--wikia-bar-height);
+        margin: 0;
+        height: initial;
+
+        & > a {
+          color: var(--wikia-bar-link-color);
+        }
+
+        img {
+          margin: 7px 5px;
+        }
+      }
+    }
+  }
+
+  #my-tools-menu {
+    border: 3px solid var(--medium-gray);
+    box-shadow: none;
+    border-radius: 3px;
+    bottom: var(--wikia-bar-height);
+
+    li a {
+      padding: 3px 5px;
+    }
+  }
+}

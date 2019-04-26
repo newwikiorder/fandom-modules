@@ -1,0 +1,27 @@
+@import "mixins";
+@import "base/config";
+
+@import "fixes/article-font-sizes";
+@import "fixes/big-bg";
+@import "fixes/ref";
+@import "fixes/misc";
+
+@import "templates/portal/index";
+@import "templates/appearances";
+@import "templates/documentation";
+@import "templates/forumheader";
+@import "templates/mbox";
+@import "templates/navbox";
+@import "templates/quote";
+@import "templates/welcome";
+@import "templates/context-link";
+
+@import "theme/article-thumbs";
+@import "theme/code";
+@import "theme/edit-section";
+@import "theme/portable-infoboxes";
+@import "theme/tables";
+@import "theme/wikia-bar";
+@import "theme/galleries";
+@import "theme/pretty-warnings";
+@import "theme/misc";

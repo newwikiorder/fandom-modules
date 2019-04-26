@@ -1,0 +1,36 @@
+/**
+ * Accompanying CSS for Template:Appearances (aka Template:Games).
+ * Project Wiki entry: https://important.fandom.com/wiki/Template:Appearances
+ */
+
+// Configurable properties
+:root {
+  --games-rail-items-per-row: 3;
+  --games-rail-item-gap: .5em;
+}
+
+#apprail {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+
+  h2 {
+    min-width: 100%;
+  }
+}
+
+.appicon {
+  margin: var(--games-rail-item-gap);
+  max-width: calc((100% / var(--games-rail-items-per-row)) - (var(--games-rail-item-gap) * (var(--games-rail-items-per-row) - 1)));
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+// Hides icons in edit mode preview.
+.ArticlePreview .appicon {
+  display: none;
+}

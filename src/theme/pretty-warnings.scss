@@ -1,0 +1,13 @@
+// Pretty-fies various warnings and system dialogues across the MediaWiki interface.
+
+#wpDestFile-warning div,
+.warning {
+  display: block;
+  list-style: none !important;
+  margin: 1.2rem 0 !important;
+  padding: 1rem 1.8rem;
+  color: var(--soft-black);
+  background-color: rgba(255, 0, 0, .3);
+  border: 1px solid var(--type-important);
+  border-radius: 3px;
+}

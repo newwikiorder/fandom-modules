@@ -1,0 +1,9 @@
+// Hides add button at the bottom of gallery sections
+.wikia-gallery .wikia-photogallery-add {
+  display: none !important;
+}
+
+// Prevents blue background on transparent gallery images.
+.accent {
+  background: transparent;
+}

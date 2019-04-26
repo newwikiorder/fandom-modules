@@ -1,0 +1,9 @@
+@import "../../mixins";
+
+/**
+ * Universal styles for all portal variants.
+ */
+
+.portal {
+  @include module-style();
+}

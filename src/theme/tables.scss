@@ -1,0 +1,50 @@
+@import "../mixins";
+
+/**
+ * Accompanying CSS for Template:Welcome.
+ */
+
+.article-table {
+  font-size: .85rem;
+  background-color: var(--module-bg);
+  border: 1px solid var(--medium-gray);
+  border-collapse: collapse;
+
+  &.align-right {
+    float: right;
+    margin: 0 0 1rem 1rem;
+  }
+
+  &.align-left {
+    float: left;
+    margin: 0 1rem 1rem 0;
+  }
+
+  td {
+    border: 1px solid var(--medium-gray);
+  }
+
+  th {
+    border: 1px solid var(--theme-color);
+    background-color: var(--theme-color);
+    color: var(--text-color);
+  }
+}
+
+.filepage-table {
+  th {
+    width: 15%;
+    text-align: right;
+    border: 1px solid var(--theme-color);
+    border-bottom-color: var(--module-bg);
+  }
+
+  td {
+    background-color: var(--module-bg);
+    border: 1px solid var(--medium-gray);
+  }
+}
+
+.center-images img {
+  text-align: center;
+}
