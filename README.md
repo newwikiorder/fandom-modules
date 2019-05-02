@@ -5,51 +5,40 @@ In order to import stylesheets from GitHub, you have to use [raw.githack](http:/
 
 Import the *development* URL. The CDN services provided by raw.githack are not needed, as the contents of all imports are compiled into a single stylesheet by MediaWiki and periodically updated.
 
-# How to contribute
-First, download a local version:
+# How to edit the source
+## Cloning and editing
+First, download a local version to edit:
 ```bash
-git clone https://github.com/jacecotton/fandom-modules.git
+git clone https://github.com/newwikiorder/fandom-modules.git
 ```
 
-Edit the `src/` directory only. The source code uses SASS with the SCSS syntax.
+All the files you'll actually edit are in the `src/` (source) directory. Sass will then compile these changes and add them as pure CSS to the `dist/` (distribution) directory. *Do not directly edit the distribution files*, as they will get overwritten by changes made to the source files.
 
-Tell SASS to watch for any changes to the files and compile them to the `dist/` directory with the following command:
-
-```bash
-sass --watch src:dist --style compressed
-```
-
-After the compilation is complete, push to the repo:
+Before you make any changes, you'll have to start the Sass compiler. Open a terminal, then navigate to whatever folder you cloned the repo to (e.g. "my-folder"):
 
 ```bash
-git add .
-git commit -m "Edit summary here"
-git push -u origin master
+cd my-folder
+sass --watch src:dist
 ```
 
-# Style guide
-This style guide does not include universal best practices for writing SASS and CSS (e.g. "comment frequently", "prefer classes to IDs", "don't use `!important`", etc.) However, universal best practices are still expected to be followed as much as possible, and the BEM naming convention is preferred.
+To make the compiler produce minified code, append ``--style compressed`` at the end of the ``sass`` command. By default the CSS will not be minified.
 
-## Pre-processing
-The source code for these modules are written in SASS (with the SCSS syntax) and compiled to CSS. SASS watches the `src/` directory and outputs to the `dist/` directory in a minified format. Thus, a typical setup for this project looks like this:
+Now you are ready to make changes to the stylesheets.
 
-```batch
-$ sass --watch src:dist --style compressed
-```
+## Pushing and updating
+To add your changes to the repo, you will need the login credentials to the New Wiki Order Github account. All and only NWO members have these credentials.
 
-## Specificity management
-FANDOM's default global stylesheet (Qualaroo.css) often uses selectors with high specificity; we can contend with this by being as specific (and only as specific) as Qualaroo is.
+If you have these ready, go back to the terminal and make sure you're still in the folder you cloned the repo to.
 
-However, for maintainability purposes, the reason for high specificity should be logged in the source code with inline comments (using `//`, so they're stripped out when compiled).
+You can stage your changes (which is the first step) by typing the command ``git add .``
 
-For example:
+Next, commit your changes with an edit summary: ``git commit -m "my edit summary here"``
 
-```scss
-// High specificity here to override Qualaroo defaults.
-// Qualaroo selector: `.WikiaPage blockquote`
-```
+Now you're ready to officially publish your changes with the command: ``git push -u origin master``.
 
-## Configurability
+The terminal may ask for your Github credentials first, simply type them in as you're prompted to.
+
+# Configurability
 Some communities may wish to change aspects about certain modules. They can do this by simply overriding the relevant style rules in their own stylesheet.
 
 To make this as easy as possible, certain properties should be variablized to minimize the amount of code needed. For example, if one wished to import the styles for Template:Quote and then change the color of the quotation marks, the following CSS would be applied:
