@@ -6,6 +6,19 @@ In order to import stylesheets from GitHub, you have to use [raw.githack](http:/
 Import the *development* URL. The CDN services provided by raw.githack are not needed, as the contents of all imports are compiled into a single stylesheet by MediaWiki and periodically updated.
 
 # How to edit the source
+## Installing Sass and the Git CLI
+This is a newbie section for editors who don't know what Sass is and how Git works. It is strongly recommended to research how it works for yourself, but some basic instructions are below. For intermediate web developers, skip to "Cloning and editing".
+
+### Sass
+Sass is a pre-processor for CSS that allows you to do things normal CSS can't (static variables, nesting, mixins, includes, interpolation, etc.) In order to do this, you have to install the Sass compiler, which takes Sass code and transforms it into CSS for you as you save each Sass file (`.scss`). Sass works in the terminal (Mac and Linux) or command prompt (Windows).
+
+Install Sass here: https://sass-lang.com/install (note you may need to install Ruby first)
+
+### Git CLI
+The Git CLI allows you to pull code from Git repos (like this one) and then publish those changes back to the repo. Instructions for how to do this are below in "Cloning and editing" and "Publishing and updating".
+
+Download Git here: https://git-scm.com/downloads
+
 ## Cloning and editing
 First, download a local version to edit:
 ```bash
