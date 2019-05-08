@@ -1,1 +1,12 @@
-.forumheader{background-color:var(--module-bg);border:1px solid var(--medium-gray);border-radius:3px;padding:10px;margin-bottom:10px}/*# sourceMappingURL=forumheader.css.map */
+/**
+ * Accompanying CSS for Template:Forumheader.
+ */
+.forumheader {
+  background-color: var(--module-bg);
+  border: 1px solid var(--medium-gray);
+  border-radius: 3px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+/*# sourceMappingURL=forumheader.css.map */

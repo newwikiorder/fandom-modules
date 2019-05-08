@@ -1,1 +1,18 @@
-.editsection{float:right !important;text-transform:lowercase;font-size:14px !important}.editsection a img{display:none}.editsection::before{display:inline;content:"["}.editsection::after{display:inline;content:"]"}/*# sourceMappingURL=edit-section.css.map */
+.editsection {
+  float: right !important;
+  text-transform: lowercase;
+  font-size: 14px !important;
+}
+.editsection a img {
+  display: none;
+}
+.editsection::before {
+  display: inline;
+  content: "[";
+}
+.editsection::after {
+  display: inline;
+  content: "]";
+}
+
+/*# sourceMappingURL=edit-section.css.map */

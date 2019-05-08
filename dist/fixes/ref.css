@@ -1,1 +1,28 @@
-.reflist{padding:0 !important}.reflist ol.references{list-style-type:inherit}.refpopups-box{background:none !important;background-color:var(--soft-white) !important;border-width:2px !important;box-shadow:none !important}.refpopups-chevron-in{border-top-color:var(--soft-white) !important}.refpopups-flipped .refpopups-chevron-in{border-bottom-color:var(--soft-white) !important}/*# sourceMappingURL=ref.css.map */
+/**
+ * Allows for customized citation letter types.
+ * See https://important.fandom.com/wiki/MediaWiki:Cite_link_label_group-lower-alpha
+ */
+.reflist {
+  padding: 0 !important;
+}
+.reflist ol.references {
+  list-style-type: inherit;
+}
+
+/**
+ * RefPopups configuration.
+ */
+.refpopups-box {
+  background: none !important;
+  background-color: var(--soft-white) !important;
+  border-width: 2px !important;
+  box-shadow: none !important;
+}
+.refpopups-chevron-in {
+  border-top-color: var(--soft-white) !important;
+}
+.refpopups-flipped .refpopups-chevron-in {
+  border-bottom-color: var(--soft-white) !important;
+}
+
+/*# sourceMappingURL=ref.css.map */

@@ -1,1 +1,23 @@
-.article-thumb{background-color:var(--module-bg);border:1px solid var(--medium-gray);border-radius:3px;padding:5px;border-radius:3px;background-image:linear-gradient(#fff 90%, #eee);border:none;box-shadow:1px 2px 2px rgba(0,0,0,.15);box-sizing:content-box}.article-thumb p:last-child,.article-thumb p+p:last-child{padding-bottom:0}.article-thumb .caption{color:var(--soft-black)}/*# sourceMappingURL=article-thumbs.css.map */
+/**
+ * Accompanying CSS for article thumbnails.
+ */
+.article-thumb {
+  background-color: var(--module-bg);
+  border: 1px solid var(--medium-gray);
+  border-radius: 3px;
+  padding: 5px;
+  border-radius: 3px;
+  background-image: linear-gradient(#fff 90%, #eee);
+  border: none;
+  box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.15);
+  box-sizing: content-box;
+}
+.article-thumb p:last-child,
+.article-thumb p + p:last-child {
+  padding-bottom: 0;
+}
+.article-thumb .caption {
+  color: var(--soft-black);
+}
+
+/*# sourceMappingURL=article-thumbs.css.map */

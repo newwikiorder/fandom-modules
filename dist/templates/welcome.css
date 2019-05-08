@@ -1,1 +1,14 @@
-.welcome-message{background-color:var(--module-bg);border:1px solid var(--medium-gray);border-radius:3px;padding:2rem;box-sizing:border-box;font-size:13px;line-height:23px}/*# sourceMappingURL=welcome.css.map */
+/**
+ * Accompanying CSS for Template:Welcome.
+ */
+.welcome-message {
+  background-color: var(--module-bg);
+  border: 1px solid var(--medium-gray);
+  border-radius: 3px;
+  padding: 2rem;
+  box-sizing: border-box;
+  font-size: 13px;
+  line-height: 23px;
+}
+
+/*# sourceMappingURL=welcome.css.map */
