@@ -140,6 +140,10 @@ ul.pi-image-collection-tabs {
   width: calc((100% / 6) + 1px);
 }
 
+.max-all ul.pi-image-collection-tabs li {
+  flex-grow: 1;
+}
+
 .pi-navigation {
   background-color: var(--module-bg);
   border-top: 1px solid var(--medium-gray);
