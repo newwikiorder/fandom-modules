@@ -42,7 +42,6 @@
   padding: 8px;
   border-right: 1px solid var(--medium-gray);
   font-weight: bold;
-  word-break: break-all;
 }
 .portable-infobox .pi-data-value {
   padding: 8px;
