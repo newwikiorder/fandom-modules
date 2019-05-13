@@ -71,7 +71,6 @@
 }
 .navbox-above, .navbox-base {
   border-bottom: 1px solid var(--medium-gray);
-  padding: 4px !important;
 }
 .navbox-above {
   position: relative;
