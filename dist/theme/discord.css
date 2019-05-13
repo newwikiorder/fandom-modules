@@ -1,0 +1,14 @@
+.title-container {
+  display: none;
+}
+
+.widget-header {
+  background-color: var(--theme-color);
+}
+
+.widget-body {
+  background-image: none;
+  background-color: var(--module-bg-secondary);
+}
+
+/*# sourceMappingURL=discord.css.map */

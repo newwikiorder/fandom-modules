@@ -827,6 +827,19 @@ ul.pi-image-collection-tabs li.current {
   border-radius: 3px;
 }
 
+.title-container {
+  display: none;
+}
+
+.widget-header {
+  background-color: var(--theme-color);
+}
+
+.widget-body {
+  background-image: none;
+  background-color: var(--module-bg-secondary);
+}
+
 .mw-plusminus-pos {
   color: #006500;
 }
