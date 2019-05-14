@@ -837,7 +837,7 @@ ul.pi-image-collection-tabs li.current {
 
 .widget-body {
   background-image: none;
-  background-color: var(--module-bg-secondary);
+  background-color: transparent;
 }
 
 .mw-plusminus-pos {
