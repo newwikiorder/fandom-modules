@@ -3,19 +3,19 @@
 }
 
 .widget-header {
-  background-color: var(--theme-color);
+  background-color: var(--theme-color) !important;
 }
 
 .widget-body {
-  background-image: none;
-  background-color: transparent;
+  background-image: none !important;
+  background-color: transparent !important;
 }
 
 .discord-widget .widget-member-avatar img {
-  border-color: var(--theme-color);
-  background-color: var(--theme-color);
+  border-color: var(--theme-color) !important;
+  background-color: var(--theme-color) !important;
 }
 
 .discord-widget .widget-member .widget-member-name {
-  background-color: var(--theme-color);
+  background-color: var(--theme-color) !important;
 }
