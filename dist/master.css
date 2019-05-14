@@ -840,6 +840,15 @@ ul.pi-image-collection-tabs li.current {
   background-color: transparent;
 }
 
+.discord-widget .widget-member-avatar img {
+  border-color: var(--theme-color);
+  background-color: var(--theme-color);
+}
+
+.discord-widget .widget-member .widget-member-name {
+  background-color: var(--theme-color);
+}
+
 .mw-plusminus-pos {
   color: #006500;
 }
