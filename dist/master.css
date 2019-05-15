@@ -833,10 +833,11 @@ ul.pi-image-collection-tabs li.current {
 
 .widget-header {
   background-color: var(--theme-color) !important;
+  color: var(--text-color) !important;
 }
 
-.widget-body {
-  background-image: none !important;
+.widget-body,
+.widget-footer {
   background-color: transparent !important;
 }
 
@@ -847,6 +848,13 @@ ul.pi-image-collection-tabs li.current {
 
 .discord-widget .widget-member .widget-member-name {
   background-color: var(--theme-color) !important;
+  color: var(--text-color) !important;
+}
+
+.widget-btn-connect {
+  background-color: var(--theme-color) !important;
+  border-color: var(--theme-color) !important;
+  color: var(--text-color) !important;
 }
 
 .mw-plusminus-pos {
