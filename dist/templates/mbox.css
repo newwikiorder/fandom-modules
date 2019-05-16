@@ -31,6 +31,7 @@
 .mbox__content__wrapper {
   display: table-cell;
   vertical-align: middle;
+  padding-right: 1rem;
 }
 .mbox__content__header {
   display: block;
@@ -48,7 +49,7 @@
   vertical-align: middle;
   text-align: center;
   padding-left: 15px;
-  border: 1px solid var(--medium-gray);
+  border-left: 1px solid var(--medium-gray);
 }
 .mbox__close {
   position: absolute;
