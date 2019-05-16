@@ -433,49 +433,48 @@ body.skin-oasis {
   font-size: 1em;
   line-height: 1.8;
 }
-
-.pull-quote__text {
+.WikiaPage .pull-quote__text {
   position: relative;
   padding: 0 2em;
   hyphens: var(--pull-quote-hyphens);
   color: var(--pull-quote-text-color);
 }
-.pull-quote__text::before, .pull-quote__text::after {
+.WikiaPage .pull-quote__text::before, .WikiaPage .pull-quote__text::after {
   position: absolute;
   font-size: 3em;
   font-family: var(--pull-quote-mark-font);
   font-weight: 700;
   color: var(--pull-quote-mark-color);
 }
-.pull-quote__text::before {
+.WikiaPage .pull-quote__text::before {
   content: "“";
   top: 0;
   left: 0;
   line-height: 1;
 }
-.pull-quote__text::after {
+.WikiaPage .pull-quote__text::after {
   content: "”";
   bottom: 0;
   right: 0;
   line-height: 0.2;
 }
-.pull-quote__source {
+.WikiaPage .pull-quote__source {
   margin-left: auto;
 }
-.pull-quote--right, .pull-quote--left {
+.WikiaPage .pull-quote--right, .WikiaPage .pull-quote--left {
   border: 1px solid var(--pull-quote-frame-color);
   border-left: 0;
   border-right: 0;
   padding: 1em 0;
   text-align: justify;
 }
-.pull-quote--right {
+.WikiaPage .pull-quote--right {
   float: right;
-  margin: 1em 0 1em 1em;
+  margin: 1em 0 1em 2em;
 }
-.pull-quote--left {
+.WikiaPage .pull-quote--left {
   float: left;
-  margin: 1em 1em 1em 0;
+  margin: 1em 2em 1em 0;
 }
 
 /**

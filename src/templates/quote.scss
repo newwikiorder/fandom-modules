@@ -16,68 +16,70 @@
 
 // High specificity here to override Qualaroo defaults.
 // Qualaroo selector: `.WikiaPage blockquote`
-.WikiaPage .pull-quote {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  max-width: var(--pull-quote-max-width);
-  margin: 1em auto;
-  font-size: 1em;
-  line-height: 1.8;
-}
+.WikiaPage {
+  .pull-quote {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: var(--pull-quote-max-width);
+    margin: 1em auto;
+    font-size: 1em;
+    line-height: 1.8;
+  }
 
-// Child elements don't require same specificity, so it's taken out here.
-.pull-quote {
-  &__text {
-    position: relative;
-    padding: 0 2em;
-    hyphens: var(--pull-quote-hyphens);
-    color: var(--pull-quote-text-color);
+  // Child elements don't require same specificity, so it's taken out here.
+  .pull-quote {
+    &__text {
+      position: relative;
+      padding: 0 2em;
+      hyphens: var(--pull-quote-hyphens);
+      color: var(--pull-quote-text-color);
 
-    &::before,
-    &::after {
-      position: absolute;
-      font-size: 3em;
-      font-family: var(--pull-quote-mark-font);
-      font-weight: 700;
-      color: var(--pull-quote-mark-color);
+      &::before,
+      &::after {
+        position: absolute;
+        font-size: 3em;
+        font-family: var(--pull-quote-mark-font);
+        font-weight: 700;
+        color: var(--pull-quote-mark-color);
+      }
+
+      &::before {
+        content: "“";
+        top: 0;
+        left: 0;
+        line-height: 1;
+      }
+
+      &::after {
+        content: "”";
+        bottom: 0;
+        right: 0;
+        line-height: .2;
+      }
     }
 
-    &::before {
-      content: "“";
-      top: 0;
-      left: 0;
-      line-height: 1;
+    &__source {
+      margin-left: auto;
     }
 
-    &::after {
-      content: "”";
-      bottom: 0;
-      right: 0;
-      line-height: .2;
+    &--right,
+    &--left {
+      border: 1px solid var(--pull-quote-frame-color);
+      border-left: 0;
+      border-right: 0;
+      padding: 1em 0;
+      text-align: justify;
     }
-  }
 
-  &__source {
-    margin-left: auto;
-  }
+    &--right {
+      float: right;
+      margin: 1em 0 1em 2em;
+    }
 
-  &--right,
-  &--left {
-    border: 1px solid var(--pull-quote-frame-color);
-    border-left: 0;
-    border-right: 0;
-    padding: 1em 0;
-    text-align: justify;
-  }
-
-  &--right {
-    float: right;
-    margin: 1em 0 1em 1em;
-  }
-
-  &--left {
-    float: left;
-    margin: 1em 1em 1em 0;
+    &--left {
+      float: left;
+      margin: 1em 2em 1em 0;
+    }
   }
 }
