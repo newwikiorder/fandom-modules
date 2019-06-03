@@ -439,6 +439,7 @@ body.skin-oasis {
   padding: 0 2em;
   hyphens: var(--pull-quote-hyphens);
   color: var(--pull-quote-text-color);
+  margin-bottom: 1em;
 }
 .WikiaPage .pull-quote__text::before, .WikiaPage .pull-quote__text::after {
   position: absolute;
@@ -461,6 +462,7 @@ body.skin-oasis {
 }
 .WikiaPage .pull-quote__source {
   margin-left: auto;
+  text-align: left;
 }
 .WikiaPage .pull-quote--right, .WikiaPage .pull-quote--left {
   border: 1px solid var(--pull-quote-frame-color);
