@@ -461,8 +461,7 @@ body.skin-oasis {
   line-height: 0.2;
 }
 .WikiaPage .pull-quote__source {
-  margin-left: auto;
-  text-align: left;
+  text-align: right;
 }
 .WikiaPage .pull-quote--right, .WikiaPage .pull-quote--left {
   border: 1px solid var(--pull-quote-frame-color);
