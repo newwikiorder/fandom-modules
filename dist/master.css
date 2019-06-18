@@ -711,6 +711,10 @@ ul.pi-image-collection-tabs li.current {
   flex-grow: 1;
 }
 
+.portable-infobox .pi-section-tab:only-child {
+  display: none;
+}
+
 .pi-navigation {
   background-color: var(--module-bg);
   border-top: 1px solid var(--medium-gray);
