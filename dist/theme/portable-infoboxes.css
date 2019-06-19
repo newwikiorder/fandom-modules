@@ -127,7 +127,7 @@ ul.pi-image-collection-tabs li.current {
   text-transform: unset !important;
 }
 
-.portable-infobox .pi-navigation {
+.portable-infobox .pi-section-navigation {
   background-color: var(--module-bg);
   border-top: 1px solid var(--medium-gray);
   padding: 7px 0;
