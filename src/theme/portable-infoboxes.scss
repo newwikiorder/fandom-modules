@@ -153,6 +153,7 @@ ul.pi-image-collection-tabs {
 }
 
 .portable-infobox .pi-section-navigation {
+  display: flex;
   background-color: var(--module-bg);
   border-top: 1px solid var(--medium-gray);
   padding: 7px 0;
