@@ -127,11 +127,13 @@ ul.pi-image-collection-tabs li.current {
   text-transform: unset !important;
 }
 
-.pi-navigation {
+.portable-infobox .pi-navigation {
   background-color: var(--module-bg);
   border-top: 1px solid var(--medium-gray);
   padding: 7px 0;
   text-align: center;
+  justify-content: space-evenly;
+  flex-flow: row wrap;
 }
 
 /*# sourceMappingURL=portable-infoboxes.css.map */
