@@ -123,6 +123,10 @@ ul.pi-image-collection-tabs li.current {
   display: none;
 }
 
+.pi-section-label {
+  text-transform: unset !important;
+}
+
 .pi-navigation {
   background-color: var(--module-bg);
   border-top: 1px solid var(--medium-gray);
