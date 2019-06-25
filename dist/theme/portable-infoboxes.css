@@ -84,7 +84,7 @@ ul.pi-image-collection-tabs li {
   flex-grow: 1;
   border: 1px solid var(--medium-gray);
   border-top: none;
-  width: calc((100% / 4) + 1px);
+  min-width: calc((100% / 4) + 1px);
 }
 ul.pi-image-collection-tabs li.current {
   background: none;
@@ -93,27 +93,27 @@ ul.pi-image-collection-tabs li.current {
 }
 
 [class^=max] ul.pi-image-collection-tabs li {
-  flex-grow: 0;
+  flex-grow: 1;
 }
 
 .max-2 ul.pi-image-collection-tabs li {
-  width: calc((100% / 2) + 1px);
+  min-width: calc((100% / 2) + 1px);
 }
 
 .max-3 ul.pi-image-collection-tabs li {
-  width: calc((100% / 3) + 1px);
+  min-width: calc((100% / 3) + 1px);
 }
 
 .max-4 ul.pi-image-collection-tabs li {
-  width: calc((100% / 4) + 1px);
+  min-width: calc((100% / 4) + 1px);
 }
 
 .max-5 ul.pi-image-collection-tabs li {
-  width: calc((100% / 5) + 1px);
+  min-width: calc((100% / 5) + 1px);
 }
 
 .max-6 ul.pi-image-collection-tabs li {
-  width: calc((100% / 6) + 1px);
+  min-width: calc((100% / 6) + 1px);
 }
 
 .max-all ul.pi-image-collection-tabs li {
