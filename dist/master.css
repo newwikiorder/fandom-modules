@@ -676,6 +676,7 @@ ul.pi-image-collection-tabs li {
   flex-grow: 1;
   border: 1px solid var(--medium-gray);
   border-top: none;
+  width: calc((100% / 4) + 1px);
 }
 ul.pi-image-collection-tabs li.current {
   background: none;

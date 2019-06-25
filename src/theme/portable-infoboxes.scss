@@ -107,6 +107,7 @@ ul.pi-image-collection-tabs {
     flex-grow: 1;
     border: 1px solid var(--medium-gray);
     border-top: none;
+    width: calc((100% / 4) + 1px);
 
     &.current {
       background: none;
@@ -119,6 +120,8 @@ ul.pi-image-collection-tabs {
 [class^="max"] ul.pi-image-collection-tabs li {
   flex-grow: 0;
 }
+
+// To-do: convert these to Sass loops
 
 .max-2 ul.pi-image-collection-tabs li {
   width: calc((100% / 2) + 1px); // extra pixel is to account for the right border
