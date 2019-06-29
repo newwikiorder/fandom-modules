@@ -99,7 +99,7 @@
 ul.pi-image-collection-tabs {
   display: flex;
   flex-wrap: wrap;
-  line-height: 2.4;
+  line-height: 2;
   width: calc(100% + 3px);
   margin-left: -1px;
 
@@ -115,10 +115,6 @@ ul.pi-image-collection-tabs {
       color: var(--text-color);
     }
   }
-}
-
-[class^="max"] ul.pi-image-collection-tabs li {
-  flex-grow: 1;
 }
 
 // To-do: convert these to Sass loops
