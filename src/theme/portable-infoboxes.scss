@@ -80,9 +80,15 @@
   }
 
   .pi-section-tab {
-    flex-grow: 1;
-    box-shadow: 0 !important;
     cursor: pointer;
+
+    &.pi-section-active {
+      box-shadow: 0 !important;
+
+      &:hover {
+        box-shadow: 0 !important;
+      }
+    }
   }
 
   .pi-section-label {

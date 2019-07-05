@@ -654,9 +654,13 @@ code {
   padding: 0;
 }
 .portable-infobox .pi-section-tab {
-  flex-grow: 1;
-  box-shadow: 0 !important;
   cursor: pointer;
+}
+.portable-infobox .pi-section-tab.pi-section-active {
+  box-shadow: 0 !important;
+}
+.portable-infobox .pi-section-tab.pi-section-active:hover {
+  box-shadow: 0 !important;
 }
 .portable-infobox .pi-section-label {
   color: #777;
