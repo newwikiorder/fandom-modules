@@ -58,6 +58,27 @@
 .portable-infobox th.pi-horizontal-group-item.pi-data-label {
   border-right: none;
 }
+.portable-infobox .pi-section-navigation {
+  padding: 0;
+}
+.portable-infobox .pi-section-tab {
+  flex-grow: 1;
+  box-shadow: 0 !important;
+  cursor: pointer;
+}
+.portable-infobox .pi-section-label {
+  color: #777;
+  font-weight: normal;
+  height: 2em;
+  text-transform: unset !important;
+}
+.portable-infobox .pi-section-active .pi-section-label {
+  color: #000;
+  font-weight: bold;
+}
+.portable-infobox .pi-section-tab:only-child {
+  display: none;
+}
 
 .pi-theme-smallhorizontalcells .pi-horizontal-group-item.pi-data-value.pi-font.pi-border-color.pi-item-spacing:first-child {
   text-align: left;
@@ -114,14 +135,6 @@ ul.pi-image-collection-tabs li.current {
 
 .max-all ul.pi-image-collection-tabs li {
   flex-grow: 1;
-}
-
-.portable-infobox .pi-section-tab:only-child {
-  display: none;
-}
-
-.pi-section-label {
-  text-transform: unset !important;
 }
 
 .portable-infobox .pi-section-navigation {

@@ -74,6 +74,32 @@
       border-right: none;
     }
   }
+
+  .pi-section-navigation {
+    padding: 0;
+  }
+
+  .pi-section-tab {
+    flex-grow: 1;
+    box-shadow: 0 !important;
+    cursor: pointer;
+  }
+
+  .pi-section-label {
+    color: #777;
+    font-weight: normal;
+    height: 2em;
+    text-transform: unset !important;
+  }
+
+  .pi-section-active .pi-section-label {
+    color: #000;
+    font-weight: bold;
+  }
+
+  .pi-section-tab:only-child {
+    display: none;
+  }
 }
 
 .pi-theme-smallhorizontalcells {
@@ -141,14 +167,6 @@ ul.pi-image-collection-tabs {
 
 .max-all ul.pi-image-collection-tabs li {
   flex-grow: 1;
-}
-
-.portable-infobox .pi-section-tab:only-child {
-  display: none;
-}
-
-.pi-section-label {
-  text-transform: unset !important;
 }
 
 .portable-infobox .pi-section-navigation {
