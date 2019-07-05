@@ -81,6 +81,7 @@
 
   .pi-section-tab {
     cursor: pointer;
+    margin: 0 !important;
 
     &.pi-section-active {
       box-shadow: 0 !important;
@@ -94,7 +95,7 @@
   .pi-section-label {
     color: #777;
     font-weight: normal;
-    height: 2em;
+    height: 1.5em;
     text-transform: unset !important;
   }
 

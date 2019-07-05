@@ -63,6 +63,7 @@
 }
 .portable-infobox .pi-section-tab {
   cursor: pointer;
+  margin: 0 !important;
 }
 .portable-infobox .pi-section-tab.pi-section-active {
   box-shadow: 0 !important;
@@ -73,7 +74,7 @@
 .portable-infobox .pi-section-label {
   color: #777;
   font-weight: normal;
-  height: 2em;
+  height: 1.5em;
   text-transform: unset !important;
 }
 .portable-infobox .pi-section-active .pi-section-label {
