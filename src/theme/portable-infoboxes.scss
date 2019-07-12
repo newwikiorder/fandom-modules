@@ -57,6 +57,13 @@
     padding: 8px;
   }
 
+  .pi-data-label,
+  .pi-data-value {
+    word-break: normal;
+    overflow-wrap: normal;
+    hyphens: none;
+  }
+
   .pi-border-color {
     border: 0 !important;
   }

@@ -638,6 +638,12 @@ code {
 .portable-infobox .pi-data-value {
   padding: 8px;
 }
+.portable-infobox .pi-data-label,
+.portable-infobox .pi-data-value {
+  word-break: normal;
+  overflow-wrap: normal;
+  hyphens: none;
+}
 .portable-infobox .pi-border-color {
   border: 0 !important;
 }
