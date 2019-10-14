@@ -864,6 +864,10 @@ ul.pi-image-collection-tabs li.current {
   display: none;
 }
 
+#ForumNewMessage .title-container {
+  display: inline;
+}
+
 .widget-header {
   background-color: var(--theme-color) !important;
   color: var(--text-color) !important;
