@@ -41,4 +41,8 @@
   white-space: nowrap;
 }
 
+.WikiaArticle .columns {
+  float: none !important;
+}
+
 /*# sourceMappingURL=misc.css.map */

@@ -50,3 +50,8 @@
 .wds-is-secondary.wds-button.wds-is-squished {
   white-space: nowrap;
 }
+
+// `float: left` here causes the subsequent headline to disappear.
+.WikiaArticle .columns {
+  float: none !important;
+}
