@@ -192,3 +192,7 @@ ul.pi-image-collection-tabs {
   justify-content: space-evenly;
   flex-flow: row wrap;
 }
+
+.pi-collapse .pi-header:first-child::after {
+  border-color: var(--soft-white) !important;
+}

@@ -754,6 +754,10 @@ ul.pi-image-collection-tabs li.current {
   flex-flow: row wrap;
 }
 
+.pi-collapse .pi-header:first-child::after {
+  border-color: var(--soft-white) !important;
+}
+
 /**
  * Accompanying CSS for Template:Welcome.
  */
