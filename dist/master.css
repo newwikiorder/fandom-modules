@@ -755,7 +755,7 @@ ul.pi-image-collection-tabs li.current {
 }
 
 .pi-collapse .pi-header:first-child::after {
-  border-color: var(--soft-white) !important;
+  border-color: var(--text-color) !important;
 }
 
 /**
