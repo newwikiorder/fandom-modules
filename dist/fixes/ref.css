@@ -8,6 +8,9 @@
 .reflist ol.references {
   list-style-type: inherit;
 }
+.reflist.columns {
+  float: none !important;
+}
 
 /**
  * RefPopups configuration.

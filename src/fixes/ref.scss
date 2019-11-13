@@ -9,6 +9,11 @@
   ol.references {
     list-style-type: inherit;
   }
+
+  // `float: left` here causes the subsequent headline to disappear.
+  &.columns {
+    float: none !important;
+  }
 }
 
 /**
