@@ -125,23 +125,23 @@ ul.pi-image-collection-tabs li.current {
 }
 
 .max-2 ul.pi-image-collection-tabs li {
-  min-width: calc((100% / 2) + 1px);
+  min-width: 50%;
 }
 
 .max-3 ul.pi-image-collection-tabs li {
-  min-width: calc((100% / 3) + 1px);
+  min-width: 33.3333333333%;
 }
 
 .max-4 ul.pi-image-collection-tabs li {
-  min-width: calc((100% / 4) + 1px);
+  min-width: 25%;
 }
 
 .max-5 ul.pi-image-collection-tabs li {
-  min-width: calc((100% / 5) + 1px);
+  min-width: 20%;
 }
 
 .max-6 ul.pi-image-collection-tabs li {
-  min-width: calc((100% / 6) + 1px);
+  min-width: 16.6666666667%;
 }
 
 .max-all ul.pi-image-collection-tabs li {
