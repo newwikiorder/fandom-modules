@@ -40,6 +40,9 @@ body.skin-oasis {
 .reflist ol.references {
   list-style-type: inherit;
 }
+.reflist.columns {
+  float: none !important;
+}
 
 /**
  * RefPopups configuration.
@@ -98,10 +101,6 @@ body.skin-oasis {
 
 .wds-is-secondary.wds-button.wds-is-squished {
   white-space: nowrap;
-}
-
-.references.columns {
-  float: none !important;
 }
 
 /**
@@ -615,7 +614,7 @@ code {
   font-size: 1rem;
   font-weight: bold;
   line-height: 20px;
-  padding: 9px 3px;
+  padding: 0.2em 0.5em;
 }
 .portable-infobox .pi-caption {
   padding: 3px 0;

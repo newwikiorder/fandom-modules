@@ -1,4 +1,4 @@
-A collection of CSS rules for custom templates and components used on a variety of FANDOM communities.
+A collection of CSS rules for custom templates and components used on a variety of Fandom communities.
 
 # Importing
 In order to import stylesheets from GitHub, you have to use [raw.githack](http://raw.githack.com/). Find the stylesheet in the `dist/` directory of this repo that you want to use, click the "Raw" button in the top right, then copy and paste that URL into raw.githack.
