@@ -60,18 +60,25 @@
     --block-border-bottom: var(--block-border);
     --block-border-left: var(--block-border);
 
-  /* --- Heading properties --- */
+  /* --- Header properties --- */
   /* Spacing */
-  --block-heading-spacing-after: 1rem;
+  --block-header-spacing-after: 1rem;
     // "Secret" variables.
-    --block-heading-exterior-spacing-top: 0;
-    --block-heading-exterior-spacing-right: 0;
-    --block-heading-exterior-spacing-bottom: var(--block-heading-spacing-after);
-    --block-heading-exterior-spacing-left: 0;
+    --block-header-exterior-spacing-top: 0;
+    --block-header-exterior-spacing-right: 0;
+    --block-header-exterior-spacing-bottom: var(--block-header-spacing-after);
+    --block-header-exterior-spacing-left: 0;
+  
+  --block-header-interior-spacing: 1rem;
+    // "Secret" variables.
+    --block-header-interior-spacing-top: var(--block-header-interior-spacing);
+    --block-header-interior-spacing-right: var(--block-header-interior-spacing);
+    --block-header-interior-spacing-bottom: var(--block-header-interior-spacing);
+    --block-header-interior-spacing-left: var(--block-header-interior-spacing);
   
   /* Alignment */
-  --block-heading-horizontal-alignment: center;
-  --block-heading-vertical-alignment: center;
+  --block-header-horizontal-alignment: center;
+  --block-header-vertical-alignment: center;
 }
 
 .Block {
@@ -106,21 +113,21 @@
   width: 100%;
 
   /* Children */
-  &__heading {
+  &__header {
     // Spacing
     margin:
-      var(--block-heading-exterior-spacing-top)
-      var(--block-heading-exterior-spacing-right)
-      var(--block-heading-exterior-spacing-bottom)
-      var(--block-heading-exterior-spacing-left) !important;
+      var(--block-header-exterior-spacing-top)
+      var(--block-header-exterior-spacing-right)
+      var(--block-header-exterior-spacing-bottom)
+      var(--block-header-exterior-spacing-left) !important;
     padding:
-      var(--block-heading-interior-spacing-top)
-      var(--block-heading-interior-spacing-right)
-      var(--block-heading-interior-spacing-bottom)
-      var(--block-heading-interior-spacing-left) !important;
+      var(--block-header-interior-spacing-top)
+      var(--block-header-interior-spacing-right)
+      var(--block-header-interior-spacing-bottom)
+      var(--block-header-interior-spacing-left) !important;
     // Alignment
-    justify-content: var(--block-heading-horizontal-alignment);
-    align-items: var(--block-heading-vertical-alignment);
+    justify-content: var(--block-header-horizontal-alignment);
+    align-items: var(--block-header-vertical-alignment);
 
     /* Universal, constant properties */
     display: flex;
