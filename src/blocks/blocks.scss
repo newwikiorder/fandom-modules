@@ -1,0 +1,46 @@
+:root {
+  /* Spacing */
+  --block-spacing-after: 0;
+    // "Secret" variables. These are more specific as to their direction, though
+    // only setting the bottom margin (spacing "after") is considered best practice.
+    --block-external-spacing-top: 0;
+    --block-external-spacing-right: 0;
+    --block-external-spacing-bottom: var(--block-spacing-after);
+    --block-external-spacing-left: 0;
+
+  --block-interior-spacing: 0;
+    // "Secret" variables. Set to the parent variable by default, but
+    // individually customizable if needed.
+    --block-interior-spacing-top: var(--block-interior-spacing);
+    --block-interior-spacing-right: var(--block-interior-spacing);
+    --block-interior-spacing-bottom: var(--block-interior-spacing);
+    --block-interior-spacing-left: var(--block-interior-spacing);
+
+  /* Background */
+  --block-background-color: transparent;
+  --block-background-image: url();
+  --block-background-size: cover;
+  --block-background-position: center;
+}
+
+.Block {
+  margin:
+    var(--block-external-spacing-top)
+    var(--block-external-spacing-right)
+    var(--block-external-spacing-bottom)
+    var(--block-external-spacing-left);
+  padding:
+    var(--block-interior-spacing-top)
+    var(--block-interior-spacing-right)
+    var(--block-interior-spacing-bottom)
+    var(--block-interior-spacing-left);
+  background-color: var(--block-background-color);
+  background-image: var(--block-background-image);
+
+  /* Universal, constant properties. */
+  background-size: var(--block-background-size);
+  background-position: var(--block-background-position);
+  display: inline-block;
+  overflow: hidden;
+  width: 100%;
+}
