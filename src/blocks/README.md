@@ -10,19 +10,19 @@ A set of "plain english" variables are provided in a <code>:root { }</code> rule
 
 The imported CSS library then worries about how and where to apply these variables, so that end-users don't have to sort through all the different selectors or know actual CSS.
 
-If the Blocks variable API does not support a given customization, and if the end-user is familiar with CSS and wants to more granularly customize the Blocks system, they can still write their own CSS by overriding it in Special:CSS on their wiki.
+If the Blocks variable system does not support a given customization, and if the end-user is familiar with CSS and wants to more granularly customize the Blocks system, they can still write their own CSS by overriding it in Special:CSS on their wiki.
 
-Furthermore, variables can be made to apply to only one block based on its ID. Every block automatically has an ID generated from its heading. So if a Block section has a heading of "News", variables can be declared in a <code>#Block-News { }</code> ruleset, which would then only be applied to the News section.
+Furthermore, variables can be made to apply to only one block based on its ID. Every block automatically has an ID generated from its heading. So if a Block section has a heading of "News", variables can be redefined in a <code>#Block-News { }</code> ruleset, which would then only apply to the News section.
 
 In practice, see https://newwikiorder.fandom.com/ as an example.
 
 ## API (WIP)
 
-The below table lists Block's API, i.e. all of the CSS custom properties (aka "variables") that compose the Block system.
+The below table lists all of the CSS custom properties (aka "variables") that compose the Block system (i.e. is the Block API).
 
 Note that there are additional "secret" variables that can be found in the uncompiled source code (<code>blocks.min.scss</code>). These variables are more granular, but typically rarely need to be changed, and are therefore excluded from this table for readability purposes.
 
-For instance, <code>--block-spacing-after</code> <em>should</em> be all that's needed for adding space around a Block container (i.e. <code>margin</code>). However, there can also be found <code>--block-exterior-spacing-top</code>, <code>right</code>, <code>bottom</code>, and <code>left</code> variables in the source, which can be used as well if needed (for whatever reason). These variables are set to <code>0</code> by default except for <code>--block-exterior-spacing-bottom</code>, which is set to the value of <code>--block-spacing-after</code>.
+For instance, <code>--block-spacing-after</code> <em>should</em> be all that's needed for adding space around a Block container (i.e. <code>margin</code>). However, there can also be found <code>--block-exterior-spacing-top</code>, <code>right</code>, <code>bottom</code>, and <code>left</code> variables in the source, which can be used as well if needed (for whatever reason). These variables are set to <code>0</code> by default except for <code>--block-exterior-spacing-bottom</code>, which is set to the value of <code>--block-spacing-after</code>. You can sort through the source code to ascertain the specifics of other secret variables.
 
 <table>
   <thead>
