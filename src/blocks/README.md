@@ -1,16 +1,14 @@
 # How it works
 
-A "plain english" configuration API is defined by a set of variables scoped to `:root` and namespaced to `block`. These variables should be overriden in a `:root` block on a wiki's Special:CSS based on that wiki's needs. Portable "skins" or "themes" can also be created simply from a given `:root` block that can be copied and pasted anywhere.
+A set of "plain english" variables are provided in a <code>:root { }</code> ruleset, which can be changed by end-users and used to create portable "themes" or "skins" that can be added just by copying and pasting the said <code>:root { }</code> block of code. See <code>_api.scss</code> as a basic example.
 
-This stylesheet then worries about how and where to apply these variables, so that end-users don't have to sort through all the different selectors or know actual CSS properties.
+The imported CSS library then worries about how and where to apply these variables, so that end-users don't have to sort through all the different selectors or know actual CSS.
 
-If the Blocks variable API does not support a given customization, and if the end-user is familiar with CSS and wants to more granularly customize the Blocks system, they can still write their own CSS by overriding it in Special:CSS.
+If the Blocks variable API does not support a given customization, and if the end-user is familiar with CSS and wants to more granularly customize the Blocks system, they can still write their own CSS by overriding it in Special:CSS on their wiki.
 
-Furthermore, variables can be made to apply to only one block based on its ID. Every block automatically has an ID generated from its heading. So if a Block section has a heading of "News", variables can be declared in a `#Block-News {  ruleset, which would only be applied to the News section.
+Furthermore, variables can be made to apply to only one block based on its ID. Every block automatically has an ID generated from its heading. So if a Block section has a heading of "News", variables can be declared in a <code>#Block-News { }</code> ruleset, which would then only be applied to the News section.
 
-In practice, see https://jakanddaxter.fandom.com/wiki/Special:CSS as an example.
-
-Note: `--themed` namespaced variables are native Fandom variables that we're leveraging here for good defaults. These can, however, be replaced. They're typically controlled from the Theme Designer if you'd like to be modular.
+In practice, see https://newwikiorder.fandom.com/ as an example.
 
 ## API (WIP)
 
@@ -97,3 +95,7 @@ For instance, <code>--block-spacing-after</code> <em>should</em> be all that's n
     </tr>
   </tbody>
 </table>
+
+## Miscellaneous
+
+* `--themed` namespaced variables are native Fandom variables that we're leveraging here for good defaults. These can, however, be replaced. They're typically controlled from the Theme Designer if you'd like to be modular.
