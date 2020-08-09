@@ -134,6 +134,34 @@ For instance, <code>--block-spacing-after</code> <em>should</em> be all that's n
       <td>The border of the header container. By default, this applies to all four edges, but a popular option is to only do the bottom edge, which can be done with the hidden variable <code>--block-header-border-bottom</code>, while setting <em>this</em> variable to <code>none</code>.</td>
       <td><code>none</code></td>
     </tr>
+    <tr>
+      <th colspan="3">Block heading (heading text) (<code>.Block__heading</code>)</th>
+    </tr>
+    <tr>
+      <td><code>--block-heading-font-family</code></td>
+      <td>The font family/font face of the heading itself. Only necessary if different from the default block font.</td>
+      <td><code>inherit</code></td>
+    </tr>
+    <tr>
+      <td><code>--block-heading-font-size</code></td>
+      <td>The font size of the heading.</td>
+      <td><code>1rem</code></td>
+    </tr>
+    <tr>
+      <td><code>--block-heading-font-weight</code></td>
+      <td>The font weight (light, normal, bold, etc.) of the heading.</td>
+      <td><code>bold</code></td>
+    </tr>
+    <tr>
+      <td><code>--block-heading-text-color</code></td>
+      <td>The color of the heading text.</td>
+      <td><code>var(--themed-text-color)</code>*</td>
+    </tr>
+    <tr>
+      <td><code>--block-heading-text-transform</code></td>
+      <td>The transformation of the text, e.g. <code>uppercase</code>, <code>lowercase</code>, etc.</td>
+      <td><code>none</code></td>
+    </tr>
   </tbody>
 </table>
 
