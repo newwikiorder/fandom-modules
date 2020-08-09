@@ -18,8 +18,8 @@
  *
  * Furthermore, variables can be made to apply to only one block based on its ID.
  * Every block automatically has an ID generated from its heading. So if a Block
- * section has a heading of "News", variables can be declared in a #News { } block,
- * which would only be applied to the News section.
+ * section has a heading of "News", variables can be declared in a #Block-News { }
+ * ruleset, which would only be applied to the News section.
  *
  * In practice, see https://jakanddaxter.fandom.com/wiki/Special:CSS as an example.
  *
