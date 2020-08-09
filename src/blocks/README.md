@@ -12,7 +12,7 @@ In practice, see https://jakanddaxter.fandom.com/wiki/Special:CSS as an example.
 
 Note: `--themed` namespaced variables are native Fandom variables that we're leveraging here for good defaults. These can, however, be replaced. They're typically controlled from the Theme Designer if you'd like to be modular.
 
-## API
+## API (WIP)
 <table>
   <thead>
     <tr>
