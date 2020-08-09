@@ -26,7 +26,7 @@ Note: `--themed` namespaced variables are native Fandom variables that we're lev
   <tbody>
     <tr>
       <td><code>--block-spacing-after</code></td>
-      <td rowspan="4"><code>:root</code></td>
+      <td rowspan="5"><code>:root</code></td>
       <td rowspan="10"><code>.Block</code></td>
       <td>Spacing applied after the block container (<code>margin-bottom</code>).</td>
       <td><code>1rem</code></td>
@@ -53,8 +53,19 @@ Note: `--themed` namespaced variables are native Fandom variables that we're lev
     </tr>
     <tr>
       <td><code>--block-background-image</code></td>
-      <td><code>:root</code> or <code>#Block-*</code></td>
-      <td>The background image of the Block container (applies to the entire block). Note that this should normally be used for a specific block, and should thus be set in (scoped to) a specific Block instance's ruleset (e.g. <code>#Block-News</code>).</td>
+      <td rowspan="3"><code>:root</code> or <code>#Block-*</code></td>
+      <td>The background image of the Block container (applies to the entire block). Note that this is typically used for setting a background for a specific Block, and should thus be set in (scoped to) a specific Block instance's ruleset (e.g. <code>#Block-News</code>).</td>
+      <td><code>none</code> (null)</td>
+    </tr>
+    <tr>
+      <td><code>--block-background-size</code></td>
+      <td>The size of the background image (only applies if <code>background-image</code> is set, thus same scoping rules).</td>
+      <td><code>cover</code></td>
+    </tr>
+    <tr>
+      <td><code>--block-background-position</code></td>
+      <td>The position of the background image (see above).</td>
+      <td><code>center</code></td>
     </tr>
   </tbody>
 </table>
