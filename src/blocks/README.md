@@ -17,13 +17,21 @@ Note: `--themed` namespaced variables are native Fandom variables that we're lev
   <thead>
     <tr>
       <th>Variable</th>
+      <th>Scope</th>
+      <th>Selector</th>
       <th>Description</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td>`--block-spacing-after`</td>
-      <td>Spacing applied after the block container (`margin-bottom`).</td>
+      <td><code>--block-spacing-after</code></td>
+      <td rowspan="10"><code>:root</code></td>
+      <td rowspan="10"><code>.Block</code></td>
+      <td>Spacing applied after the block container (<code>margin-bottom</code>).</td>
+    </tr>
+    <tr>
+      <td><code>--block-interior-spacing</code></td>
+      <td>Spacing applied within the block container (<code>padding</code>).</td>
     </tr>
   </tbody>
 </table>
