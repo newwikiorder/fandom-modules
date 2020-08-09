@@ -45,6 +45,7 @@ For instance, <code>--block-spacing-after</code> <em>should</em> be all that's n
     </tr>
     <tr>
       <td rowspan="10"><code>--block</code></td>
+      <td><code>spacing-after</code></td>
       <td>Spacing applied after the block container (<code>margin-bottom</code>).</td>
       <td><code>1rem</code></td>
     </tr>
