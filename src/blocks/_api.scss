@@ -1,14 +1,13 @@
 /*
  * This is an example featuring all customization variables set to default values.
  * Copy and paste this to your wiki's Special:CSS and change values as needed.
- * If you do not need to change the values, it is safe to remove altogether.
+ * If you do not need to change the values, it is safe to remove the declaration
+ * altogether.
+ *
+ * Import the library first with this link: https://cdn.jsdelivr.net/gh/newwikiorder/fandom-modules@latest/dist/blocks/blocks.min.css
  *
  * See https://github.com/newwikiorder/fandom-modules/tree/master/src/blocks for
  * documentation and more information.
- *
- * Note: --themed namespaced variables are native Fandom variables that we're
- * leveraging here for good defaults. These can, however, be replaced. They're
- * typically controlled from the Theme Designer if you'd like to be modular.
  */
 
 :root {
@@ -51,5 +50,5 @@
 #Block-Example {
   // This would only apply to a block with a heading of "Example". Any variable
   // can be overridden like this, including for children of this element.
-  --block-background-color: black;
+  --block-background-image: url('https://example.com/');
 }
