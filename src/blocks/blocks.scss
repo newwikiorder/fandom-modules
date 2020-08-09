@@ -104,7 +104,6 @@
   --block-heading-font-family: inherit;
   --block-heading-font-size: 1rem;
   --block-heading-font-weight: bold;
-  --block-heading-font-variation: none;
   --block-heading-text-color: var(--themed-text-color);
   --block-heading-text-transform: none;
 }
@@ -174,7 +173,9 @@
   &__heading {
     font-family: var(--block-heading-font-family);
     font-size: var(--block-heading-font-size) !important;
+    font-weight: var(--block-heading-font-weight);
     color: var(--block-heading-text-color);
+    text-transform: var(--block-heading-text-transform);
 
     // Universal, constant properties.
     margin: 0 !important;
