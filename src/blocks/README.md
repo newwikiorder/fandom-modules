@@ -13,6 +13,13 @@ In practice, see https://jakanddaxter.fandom.com/wiki/Special:CSS as an example.
 Note: `--themed` namespaced variables are native Fandom variables that we're leveraging here for good defaults. These can, however, be replaced. They're typically controlled from the Theme Designer if you'd like to be modular.
 
 ## API (WIP)
+
+The below table lists Block's API, i.e. all of the CSS custom properties (aka "variables") that compose the Block system.
+
+Note that there are additional "secret" variables that can be found in the uncompiled source code (<code>blocks.min.scss</code>). These variables are more granular, but typically rarely need to be changed, and are therefore excluded from this table for readability purposes.
+
+For instance, <code>--block-spacing-after</code> <em>should</em> be all that's needed for adding space around a Block container (i.e. <code>margin</code>). However, there can also be found <code>--block-exterior-spacing-top</code>, <code>right</code>, <code>bottom</code>, and <code>left</code> variables in the source, which can be used as well if needed (for whatever reason). These variables are set to <code>0</code> by default except for <code>--block-exterior-spacing-bottom</code>, which is set to the value of <code>--block-spacing-after</code>.
+
 <table>
   <thead>
     <tr>
