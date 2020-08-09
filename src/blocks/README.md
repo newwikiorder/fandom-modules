@@ -59,7 +59,7 @@ For instance, <code>--block-spacing-after</code> <em>should</em> be all that's n
     <tr>
       <td><code>--block-background-color</code></td>
       <td>The background color of the Block container (applies to the entire block).</td>
-      <td><code>var(--themed-page-background--windows)</code></td>
+      <td><code>var(--themed-page-background--windows)</code>*</td>
     </tr>
     <tr>
       <td><code>--block-background-image</code></td>
@@ -98,6 +98,41 @@ For instance, <code>--block-spacing-after</code> <em>should</em> be all that's n
       <td><code>--block-header-interior-spacing</code></td>
       <td>Spacing applied within the block header (<code>padding</code>).</td>
       <td><code>1rem</code></td>
+    </tr>
+    <tr>
+      <td><code>--block-header-horizontal-alignment</code></td>
+      <td>The horizontal alignment of the content within the header, in flexbox terms.</td>
+      <td><code>center</code></td>
+    </tr>
+    <tr>
+      <td><code>--block-header-vertical-alignment</code></td>
+      <td>The vertical alignment of the content within the header, in flexbox terms.</td>
+      <td><code>center</code></td>
+    </tr>
+    <tr>
+      <td><code>--block-header-background-color</code></td>
+      <td>The background color of the header container.</td>
+      <td><code>var(--themed-page-background-secondary)</code>*</td>
+    </tr>
+    <tr>
+      <td><code>--block-header-background-image</code></td>
+      <td>The background image of the header container. Similar to <code>--block-background-image</code>, this is usually used for individual Block instances.</td>
+      <td><code>none</code></td>
+    </tr>
+    <tr>
+      <td><code>--block-header-background-size</code></td>
+      <td>The background size of the header container.</td>
+      <td><code>cover</code></td>
+    </tr>
+    <tr>
+      <td><code>--block-header-background-position</code></td>
+      <td>The background position of the header container.</td>
+      <td><code>center</code></td>
+    </tr>
+    <tr>
+      <td><code>--block-header-border</code></td>
+      <td>The border of the header container. By default, this applies to all four edges, but a popular option is to only do the bottom edge, which can be done with the hidden variable <code>--block-header-border-bottom</code>, while setting <em>this</em> variable to <code>none</code>.</td>
+      <td><code>none</code></td>
     </tr>
   </tbody>
 </table>

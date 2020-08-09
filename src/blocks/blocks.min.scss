@@ -36,7 +36,7 @@
   --block-background-image: none;
   --block-background-size: cover;
   --block-background-position: center;
-  --block-border: 1px solid transparent;
+  --block-border: none;
     // "Secret" variables.
     --block-border-top: var(--block-border);
     --block-border-right: var(--block-border);
@@ -72,7 +72,7 @@
   --block-header-background-image: none;
   --block-header-background-size: cover;
   --block-header-background-position: center;
-  --block-header-border: 1px solid transparent;
+  --block-header-border: none;
     // "Secret" variables.
     --block-header-border-top: var(--block-header-border);
     --block-header-border-right: var(--block-header-border);
