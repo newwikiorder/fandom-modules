@@ -1,4 +1,10 @@
-# How it works
+# Blocks
+
+Blocks is a system of components (or templates) used for creating Main Page designs on Fandom websites. The goal is to be able to easily modify them based on a given wiki's needs, transfer base designs across wikis, and maintain the underlying codebase from a single "source of truth".
+
+Just like any other aspect of <code>fandom-modules</code>, the goal is also to provide full transparency for what's going on "under the hood", remaining easily overridable without being overwhelming for non-developers. To that end, aspects and parts of code for this project are revealed in a "layered" way, such that the code a person is exposed to is only what they need or want to see.
+
+## How it works
 
 A set of "plain english" variables are provided in a <code>:root { }</code> ruleset, which can be changed by end-users and used to create portable "themes" or "skins" that can be added just by copying and pasting the said <code>:root { }</code> block of code. See <code>_api.scss</code> as a basic example.
 
