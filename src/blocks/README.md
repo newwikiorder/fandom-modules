@@ -1,6 +1,6 @@
 # How it works
 
-A "plain english" configuration API is defined by a set of variables scoped to `:root` and namespaced to `block`. (SEE: `_api.scss`) These variables should be overriden in a `:root` block on a wiki's Special:CSS based on that wiki's needs. Portable "skins" or "themes" can also be created simply from a given `:root` block that can be copied and pasted anywhere.
+A "plain english" configuration API is defined by a set of variables scoped to `:root` and namespaced to `block`. These variables should be overriden in a `:root` block on a wiki's Special:CSS based on that wiki's needs. Portable "skins" or "themes" can also be created simply from a given `:root` block that can be copied and pasted anywhere.
 
 This stylesheet then worries about how and where to apply these variables, so that end-users don't have to sort through all the different selectors or know actual CSS properties.
 
@@ -11,3 +11,19 @@ Furthermore, variables can be made to apply to only one block based on its ID. E
 In practice, see https://jakanddaxter.fandom.com/wiki/Special:CSS as an example.
 
 Note: `--themed` namespaced variables are native Fandom variables that we're leveraging here for good defaults. These can, however, be replaced. They're typically controlled from the Theme Designer if you'd like to be modular.
+
+## API
+<table>
+  <thead>
+    <tr>
+      <th>Variable</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>`--block-spacing-after`</td>
+      <td>Spacing applied after the block container (`margin-bottom`).</td>
+    </tr>
+  </tbody>
+</table>
