@@ -4,23 +4,25 @@
  * If you do not need to change the values, it is safe to remove the declaration
  * altogether.
  *
- * Import the library first with this link: https://cdn.jsdelivr.net/gh/newwikiorder/fandom-modules@latest/dist/blocks/blocks.min.css
- *
  * See https://github.com/newwikiorder/fandom-modules/tree/master/src/blocks for
  * documentation and more information.
  */
 
+/* Import Blocks library. */
+@import url("https://cdn.jsdelivr.net/gh/newwikiorder/fandom-modules@latest/dist/blocks/blocks.min.css");
+
+/* Customize variables. */
 :root {
   /* --- Container --- */
   --block-spacing-after: 1rem;
   --block-interior-spacing: 0;
   
-  --block-horizontal-alignment: flex-start; // Left (default)
-  --block-vertical-alignment: flex-start; // Top (default)
+  --block-horizontal-alignment: flex-start;
+  --block-vertical-alignment: flex-start;
 
   --block-background-color: var(--themed-page-background--windows);
   --block-background-image: url();
-  --block-background-size: cover; // Minimum width and height is 100% of container, no maximum
+  --block-background-size: cover;
   --block-background-position: center;
   --block-border: 1px solid transparent;
 
@@ -44,11 +46,11 @@
   --block-heading-font-size: 1rem;
   --block-heading-font-weight: bold;
   --block-heading-text-color: var(--themed-text-color);
-  --block-heading-text-transform: none; // uppercase, lowercase, capitalize, etc.
+  --block-heading-text-transform: none;
 }
 
 #Block-Example {
-  // This would only apply to a block with a heading of "Example". Any variable
-  // can be overridden like this, including for children of this element.
+  /* This would only apply to a block with a heading of "Example". Any variable
+   * can be overridden like this, including for children of this element. */
   --block-background-image: url('https://example.com/');
 }

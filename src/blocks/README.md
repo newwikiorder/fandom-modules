@@ -1,12 +1,12 @@
 # Blocks
 
-Blocks is a system of components (or templates) used for creating Main Page designs on Fandom websites. The goal is to be able to easily modify them based on a given wiki's needs, transfer base designs across wikis, and maintain the underlying codebase from a single "source of truth".
+Blocks is a system of components (or templates) used for creating Main Page designs on Fandom websites. It is replacement for the legacy Portal system. The goal is to be able to easily modify them based on a given wiki's needs, transfer base designs across wikis, and maintain the underlying codebase from a single "source of truth".
 
 Just like any other aspect of <code>fandom-modules</code>, the goal is also to provide full transparency for what's going on "under the hood", remaining easily overridable without being overwhelming for non-developers. To that end, aspects and parts of code for this project are revealed in a "layered" way, such that the code a person is exposed to is only what they need or want to see.
 
 ## How it works
 
-A set of "plain english" variables are provided in a <code>:root { }</code> ruleset, which can be changed by end-users and used to create portable "themes" or "skins" that can be added just by copying and pasting the said <code>:root { }</code> block of code. See <code>_api.scss</code> as a basic example.
+A set of "plain english" variables are provided in a <code>:root { }</code> ruleset, which can be changed by end-users and used to create portable "themes" or "skins" that can be added just by copying and pasting the said <code>:root { }</code> block of code. See <code>_example.css</code> as a basic example.
 
 The imported CSS library then worries about how and where to apply these variables, so that end-users don't have to sort through all the different selectors or know actual CSS.
 
@@ -19,10 +19,6 @@ In practice, see https://newwikiorder.fandom.com/ as an example.
 ## API (WIP)
 
 The below table lists all of the CSS custom properties (aka "variables") that compose the Block system (i.e. is the Block API).
-
-Note that there are additional "secret" variables that can be found in the uncompiled source code (<code>blocks.min.scss</code>). These variables are more granular, but typically rarely need to be changed, and are therefore excluded from this table for readability purposes.
-
-For instance, <code>--block-spacing-after</code> <em>should</em> be all that's needed for adding space around a Block container (i.e. <code>margin</code>). However, there can also be found <code>--block-exterior-spacing-top</code>, <code>right</code>, <code>bottom</code>, and <code>left</code> variables in the source, which can be used as well if needed (for whatever reason). These variables are set to <code>0</code> by default except for <code>--block-exterior-spacing-bottom</code>, which is set to the value of <code>--block-spacing-after</code>. You can sort through the source code to ascertain the specifics of other secret variables.
 
 <table>
   <thead>
@@ -164,6 +160,10 @@ For instance, <code>--block-spacing-after</code> <em>should</em> be all that's n
     </tr>
   </tbody>
 </table>
+
+Note that there are additional "secret" variables that can be found in the uncompiled source code (<code>blocks.min.scss</code>). These variables are more granular, but typically rarely need to be changed, and are therefore excluded from this table for readability purposes.
+
+For instance, <code>--block-spacing-after</code> <em>should</em> be all that's needed for adding space around a Block container (i.e. <code>margin</code>). However, there can also be found <code>--block-exterior-spacing-top</code>, <code>right</code>, <code>bottom</code>, and <code>left</code> variables in the source, which can be used as well if needed (for whatever reason). These variables are set to <code>0</code> by default except for <code>--block-exterior-spacing-bottom</code>, which is set to the value of <code>--block-spacing-after</code>. You can sort through the source code to ascertain the specifics of other secret variables.
 
 ## Miscellaneous
 
