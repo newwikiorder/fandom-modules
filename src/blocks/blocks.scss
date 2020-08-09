@@ -49,7 +49,7 @@
   --block-vertical-alignment: flex-start;
 
   /* Fill and stroke */
-  --block-background-color: transparent;
+  --block-background-color: var(--themed-page-background--windows);
   --block-background-image: none;
   --block-background-size: cover;
   --block-background-position: center;
@@ -59,6 +59,10 @@
     --block-border-right: var(--block-border);
     --block-border-bottom: var(--block-border);
     --block-border-left: var(--block-border);
+  
+  /* Shape */
+  --block-font-family: Rubik, sans-serif;
+  // also border-radius etc.
 
   /* --- Header properties --- */
   /* Spacing */
@@ -81,7 +85,7 @@
   --block-header-vertical-alignment: center;
 
   /* Fill and stroke */
-  --block-header-background-color: transparent;
+  --block-header-background-color: var(--themed-page-background--secondary);
   --block-header-background-image: none;
   --block-header-background-size: cover;
   --block-header-background-position: center;
@@ -91,6 +95,10 @@
     --block-header-border-right: var(--block-header-border);
     --block-header-border-bottom: var(--block-header-border);
     --block-header-border-left: var(--block-header-border);
+  
+  /* --- Heading properties --- */
+  --block-heading-font-family: inherit;
+  --block-heading-font-size: 1rem;
 }
 
 .Block {
@@ -131,12 +139,12 @@
       var(--block-header-exterior-spacing-top)
       var(--block-header-exterior-spacing-right)
       var(--block-header-exterior-spacing-bottom)
-      var(--block-header-exterior-spacing-left) !important;
+      var(--block-header-exterior-spacing-left);
     padding:
       var(--block-header-interior-spacing-top)
       var(--block-header-interior-spacing-right)
       var(--block-header-interior-spacing-bottom)
-      var(--block-header-interior-spacing-left) !important;
+      var(--block-header-interior-spacing-left);
     // Alignment
     justify-content: var(--block-header-horizontal-alignment);
     align-items: var(--block-header-vertical-alignment);
@@ -152,6 +160,16 @@
 
     // Universal, constant properties
     display: flex;
+    width: 100%;
+  }
+
+  &__heading {
+    font-family: var(--block-heading-font-family);
+    font-size: var(--block-heading-font-size) !important;
+
+    // Universal, constant properties.
+    margin: 0 !important;
+    padding: 0 !important;
   }
 }
 
@@ -159,5 +177,5 @@
 // - Author: Jak Himself (https://dev.fandom.com/wiki/User:Jak_Himself)
 //
 // CONTACT:
-// - Submit an issue or PR: github@newwikiorder/newwikiorder
+// - Submit an issue or PR: github@newwikiorder/fandom-modules
 // - Help and feedback on Discord: https://discord.gg/N358k7R

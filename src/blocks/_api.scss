@@ -14,27 +14,34 @@
   --block-horizontal-alignment: flex-start; // Left (default)
   --block-vertical-alignment: flex-start; // Top (default)
 
-  --block-background-color: transparent;
+  --block-background-color: var(--themed-page-background--windows);
   --block-background-image: url();
   --block-background-size: cover; // Minimum width and height is 100% of container, no maximum
   --block-background-position: center;
   --block-border: 1px solid transparent;
 
-  /* --- Header --- */
+  --block-font-family: Rubik, sans-serif;
+
+  /* --- Header (text container) --- */
   --block-header-spacing-after: 1rem;
   --block-header-interior-spacing: 1rem;
 
   --block-header-horizontal-alignment: center;
   --block-header-vertical-alignment: center;
 
-  --block-header-background-color: transparent;
+  --block-header-background-color: var(--themed-page-background--secondary);
   --block-header-background-image: url();
   --block-header-background-size: cover;
   --block-header-background-position: center;
   --block-header-border: 1px solid transparent;
+
+  /* --- Heading (text itself) --- */
+  --block-heading-font-family: inherit;
+  --block-heading-font-size: 1rem;
 }
 
 #Block-Example {
-  // This would only apply to a block with a heading of "Example".
+  // This would only apply to a block with a heading of "Example". Any variable
+  // can be overridden like this, including for children of this element.
   --block-background-color: black;
 }

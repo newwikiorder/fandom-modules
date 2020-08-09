@@ -41,7 +41,7 @@
   --block-horizontal-alignment: flex-start;
   --block-vertical-alignment: flex-start;
   /* Fill and stroke */
-  --block-background-color: transparent;
+  --block-background-color: var(--themed-page-background--windows);
   --block-background-image: none;
   --block-background-size: cover;
   --block-background-position: center;
@@ -50,6 +50,8 @@
   --block-border-right: var(--block-border);
   --block-border-bottom: var(--block-border);
   --block-border-left: var(--block-border);
+  /* Shape */
+  --block-font-family: Rubik, sans-serif;
   /* --- Header properties --- */
   /* Spacing */
   --block-header-spacing-after: 1rem;
@@ -66,7 +68,7 @@
   --block-header-horizontal-alignment: center;
   --block-header-vertical-alignment: center;
   /* Fill and stroke */
-  --block-header-background-color: transparent;
+  --block-header-background-color: var(--themed-page-background--secondary);
   --block-header-background-image: none;
   --block-header-background-size: cover;
   --block-header-background-position: center;
@@ -75,6 +77,9 @@
   --block-header-border-right: var(--block-header-border);
   --block-header-border-bottom: var(--block-header-border);
   --block-header-border-left: var(--block-header-border);
+  /* --- Heading properties --- */
+  --block-heading-font-family: inherit;
+  --block-heading-font-size: 1rem;
 }
 
 .Block {
@@ -96,8 +101,8 @@
   width: 100%;
 }
 .Block__header {
-  margin: var(--block-header-exterior-spacing-top) var(--block-header-exterior-spacing-right) var(--block-header-exterior-spacing-bottom) var(--block-header-exterior-spacing-left) !important;
-  padding: var(--block-header-interior-spacing-top) var(--block-header-interior-spacing-right) var(--block-header-interior-spacing-bottom) var(--block-header-interior-spacing-left) !important;
+  margin: var(--block-header-exterior-spacing-top) var(--block-header-exterior-spacing-right) var(--block-header-exterior-spacing-bottom) var(--block-header-exterior-spacing-left);
+  padding: var(--block-header-interior-spacing-top) var(--block-header-interior-spacing-right) var(--block-header-interior-spacing-bottom) var(--block-header-interior-spacing-left);
   justify-content: var(--block-header-horizontal-alignment);
   align-items: var(--block-header-vertical-alignment);
   background-color: var(--block-header-background-color);
@@ -109,6 +114,13 @@
   border-bottom: var(--block-header-border-bottom);
   border-left: var(--block-header-border-left);
   display: flex;
+  width: 100%;
+}
+.Block__heading {
+  font-family: var(--block-heading-font-family);
+  font-size: var(--block-heading-font-size) !important;
+  margin: 0 !important;
+  padding: 0 !important;
 }
 
 /*# sourceMappingURL=blocks.css.map */
