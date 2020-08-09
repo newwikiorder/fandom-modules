@@ -7,6 +7,7 @@
  */
 
 :root {
+  /* --- Container --- */
   --block-spacing-after: 1rem;
   --block-interior-spacing: 1rem;
   
@@ -17,6 +18,14 @@
   --block-background-image: url();
   --block-background-size: cover; // Minimum width and height is 100% of container, no maximum
   --block-background-position: center;
+  --block-border: 1px solid transparent;
+
+  /* --- Heading --- */
+  --block-heading-spacing-after: 1rem;
+  --block-heading-interior-spacing: 1rem;
+
+  --block-heading-horizontal-alignment: center;
+  --block-heading-vertical-alignment: center;
 }
 
 #Block-Example {

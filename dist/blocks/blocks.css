@@ -25,12 +25,13 @@
  * In practice, see https://jakanddaxter.fandom.com/wiki/Special:CSS as an example.
  */
 :root {
+  /* --- Container properties --- */
   /* Spacing */
   --block-spacing-after: 1rem;
-  --block-external-spacing-top: 0;
-  --block-external-spacing-right: 0;
-  --block-external-spacing-bottom: var(--block-spacing-after);
-  --block-external-spacing-left: 0;
+  --block-exterior-spacing-top: 0;
+  --block-exterior-spacing-right: 0;
+  --block-exterior-spacing-bottom: var(--block-spacing-after);
+  --block-exterior-spacing-left: 0;
   --block-interior-spacing: 1rem;
   --block-interior-spacing-top: var(--block-interior-spacing);
   --block-interior-spacing-right: var(--block-interior-spacing);
@@ -39,15 +40,30 @@
   /* Alignment */
   --block-horizontal-alignment: flex-start;
   --block-vertical-alignment: flex-start;
-  /* Background */
+  /* Fill and stroke */
   --block-background-color: transparent;
   --block-background-image: none;
   --block-background-size: cover;
   --block-background-position: center;
+  --block-border: 1px solid transparent;
+  --block-border-top: var(--block-border);
+  --block-border-right: var(--block-border);
+  --block-border-bottom: var(--block-border);
+  --block-border-left: var(--block-border);
+  /* --- Heading properties --- */
+  /* Spacing */
+  --block-heading-spacing-after: 1rem;
+  --block-heading-exterior-spacing-top: 0;
+  --block-heading-exterior-spacing-right: 0;
+  --block-heading-exterior-spacing-bottom: var(--block-heading-spacing-after);
+  --block-heading-exterior-spacing-left: 0;
+  /* Alignment */
+  --block-heading-horizontal-alignment: center;
+  --block-heading-vertical-alignment: center;
 }
 
 .Block {
-  margin: var(--block-external-spacing-top) var(--block-external-spacing-right) var(--block-external-spacing-bottom) var(--block-external-spacing-left);
+  margin: var(--block-exterior-spacing-top) var(--block-exterior-spacing-right) var(--block-exterior-spacing-bottom) var(--block-exterior-spacing-left);
   padding: var(--block-interior-spacing-top) var(--block-interior-spacing-right) var(--block-interior-spacing-bottom) var(--block-interior-spacing-left);
   align-items: var(--block-horizontal-alignment);
   justify-content: var(--block-horizontal-alignment);
@@ -55,11 +71,24 @@
   background-image: var(--block-background-image);
   background-size: var(--block-background-size);
   background-position: var(--block-background-position);
+  border-top: var(--block-border-top);
+  border-right: var(--block-border-right);
+  border-bottom: var(--block-border-bottom);
+  border-left: var(--block-border-left);
   /* Universal, constant properties. */
-  display: inline-flex;
+  display: flex;
   flex-direction: column;
   overflow: hidden;
   width: 100%;
+  /* Children */
+}
+.Block__heading {
+  margin: var(--block-heading-exterior-spacing-top) var(--block-heading-exterior-spacing-right) var(--block-heading-exterior-spacing-bottom) var(--block-heading-exterior-spacing-left) !important;
+  padding: var(--block-heading-interior-spacing-top) var(--block-heading-interior-spacing-right) var(--block-heading-interior-spacing-bottom) var(--block-heading-interior-spacing-left) !important;
+  justify-content: var(--block-heading-horizontal-alignment);
+  align-items: var(--block-heading-vertical-alignment);
+  /* Universal, constant properties */
+  display: flex;
 }
 
 /*# sourceMappingURL=blocks.css.map */
