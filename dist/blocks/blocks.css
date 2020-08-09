@@ -2,15 +2,16 @@
  * HOW IT WORKS:
  * 
  * A "plain english" configuration API is defined by a set of variables scoped
- * to ":root" and namespaced to "block". These variables should be overriden in
- * a ":root" block on a wiki's Special:CSS based on that wiki's needs. Portable
- * "skins" or "themes" can also be created simply from a given ":root" block
- * that can be copied and pasted anywhere.
+ * to ":root" and namespaced to "block". (SEE: _api.scss) These variables should
+ * be overriden in a ":root" block on a wiki's Special:CSS based on that wiki's
+ * needs. Portable "skins" or "themes" can also be created simply from a given
+ * ":root" block that can be copied and pasted anywhere.
  *
  * This stylesheet then worries about how and where to apply these variables, so
  * that end-users don't have to sort through all the different selectors or know
  * actual CSS properties.
- *
+ *    
+
  * However, if the Blocks variable API does not support a given customization, and
  * if the end-user is familiar with CSS and wants to more granularly customize
  * the Blocks system, they can still write their own CSS by overriding it in
@@ -20,15 +21,17 @@
  * Every block automatically has an ID generated from its heading. So if a Block
  * section has a heading of "News", variables can be declared in a #News { } block,
  * which would only be applied to the News section.
+ *
+ * In practice, see https://jakanddaxter.fandom.com/wiki/Special:CSS as an example.
  */
 :root {
   /* Spacing */
-  --block-spacing-after: 0;
+  --block-spacing-after: 1rem;
   --block-external-spacing-top: 0;
   --block-external-spacing-right: 0;
   --block-external-spacing-bottom: var(--block-spacing-after);
   --block-external-spacing-left: 0;
-  --block-interior-spacing: 0;
+  --block-interior-spacing: 1rem;
   --block-interior-spacing-top: var(--block-interior-spacing);
   --block-interior-spacing-right: var(--block-interior-spacing);
   --block-interior-spacing-bottom: var(--block-interior-spacing);
@@ -38,7 +41,7 @@
   --block-vertical-alignment: flex-start;
   /* Background */
   --block-background-color: transparent;
-  --block-background-image: url();
+  --block-background-image: none;
   --block-background-size: cover;
   --block-background-position: center;
 }
@@ -58,13 +61,5 @@
   overflow: hidden;
   width: 100%;
 }
-
-/*
- * HUMANS:
- * - User:Jak Himself
- *
- * CONTACT:
- * - github@newwikiorder
- */
 
 /*# sourceMappingURL=blocks.css.map */

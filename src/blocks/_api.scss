@@ -1,0 +1,25 @@
+/*
+ * This is an example featuring all customization variables set to default values.
+ * Copy and paste this to your wiki's Special:CSS and change values as needed.
+ * If you do not need to change the values, it is safe to remove altogether.
+ *
+ * See blocks.scss for more information.
+ */
+
+:root {
+  --block-spacing-after: 1rem;
+  --block-interior-spacing: 1rem;
+  
+  --block-horizontal-alignment: flex-start; // Left (default)
+  --block-vertical-alignment: flex-start; // Top (default)
+
+  --block-background-color: transparent;
+  --block-background-image: url();
+  --block-background-size: cover; // Minimum width and height is 100% of container, no maximum
+  --block-background-position: center;
+}
+
+#Block-Example {
+  // This would only apply to a block with a heading of "Example".
+  --block-background-color: black;
+}
