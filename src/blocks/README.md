@@ -55,7 +55,7 @@ Note: `--themed` namespaced variables are native Fandom variables that we're lev
       <td><code>--block-background-image</code></td>
       <td rowspan="3"><code>:root</code> or <code>#Block-*</code></td>
       <td>The background image of the Block container (applies to the entire block). Note that this is typically used for setting a background for a specific Block, and should thus be set in (scoped to) a specific Block instance's ruleset (e.g. <code>#Block-News</code>).</td>
-      <td><code>none</code> (null)</td>
+      <td><code>none</code></td>
     </tr>
     <tr>
       <td><code>--block-background-size</code></td>
@@ -66,6 +66,17 @@ Note: `--themed` namespaced variables are native Fandom variables that we're lev
       <td><code>--block-background-position</code></td>
       <td>The position of the background image (see above).</td>
       <td><code>center</code></td>
+    </tr>
+    <tr>
+      <td><code>--block-border</code></td>
+      <td rowspan="10"><code>:root</code></td>
+      <td>The border of the Block container (applies to the entire block).</td>
+      <td><code>1px solid transparent</code></td>
+    </tr>
+    <tr>
+      <td><code>--block-font-family</code></td>
+      <td>The font family/font face of the Block. Set to Rubik, Fandom's brand font, by default.</td>
+      <td><code>Rubik, sans-serif</code></td>
     </tr>
   </tbody>
 </table>
