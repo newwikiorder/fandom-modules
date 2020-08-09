@@ -1,9 +1,17 @@
 A collection of CSS rules for custom templates and components used on a variety of Fandom communities.
 
 # Importing
-In order to import stylesheets from GitHub, you have to use [raw.githack](http://raw.githack.com/). Find the stylesheet in the `dist/` directory of this repo that you want to use, click the "Raw" button in the top right, then copy and paste that URL into raw.githack.
+In order to import stylesheets from GitHub, you have to use [jsdelivr.net](https://jsdelivr.net/). Find the file that you want to import to your wiki in the `dist/` directory of this repo, then replace `MODULE` in the following URL with its name:
 
-Import the *development* URL. The CDN services provided by raw.githack are not needed, as the contents of all imports are compiled into a single stylesheet by MediaWiki and periodically updated.
+```css
+@import url("https://cdn.jsdelivr.net/gh/newwikiorder/fandom-modules@latest/dist/MODULE/MODULE.css");
+```
+
+Alternatively, you can import everything via the master file using this:
+
+```css
+@import url("https://cdn.jsdelivr.net/gh/newwikiorder/fandom-modules@latest/dist/master.css");
+```
 
 # How to edit the source
 ## Installing Sass and the Git CLI

@@ -167,4 +167,4 @@ For instance, <code>--block-spacing-after</code> <em>should</em> be all that's n
 
 ## Miscellaneous
 
-* `--themed` namespaced variables are native Fandom variables that correspond with values set in the Theme Designer. We're leveraging here for good defaults. These should not be redefined, but they can be replaced if you don't want to use Theme Designer values.
+* `--themed` namespaced variables are native Fandom variables that correspond with values set in the Theme Designer. We're leveraging them here for good defaults. These should not be redefined, but they can be replaced if you don't want to use Theme Designer values.
