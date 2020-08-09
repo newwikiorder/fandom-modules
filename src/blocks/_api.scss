@@ -14,7 +14,7 @@
 :root {
   /* --- Container --- */
   --block-spacing-after: 1rem;
-  --block-interior-spacing: 1rem;
+  --block-interior-spacing: 0;
   
   --block-horizontal-alignment: flex-start; // Left (default)
   --block-vertical-alignment: flex-start; // Top (default)

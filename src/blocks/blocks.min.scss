@@ -9,7 +9,7 @@
     --block-exterior-spacing-bottom: var(--block-spacing-after);
     --block-exterior-spacing-left: 0;
 
-  --block-interior-spacing: 1rem;
+  --block-interior-spacing: 0;
     // "Secret" variables. Set to the parent variable by default, but individually
     // customizable if needed.
     --block-interior-spacing-top: var(--block-interior-spacing);
@@ -18,7 +18,7 @@
     --block-interior-spacing-left: var(--block-interior-spacing);
   
   /* Alignment */
-  --block-horizontal-alignment: flex-start;
+  --block-horizontal-alignment: stretch;
   --block-vertical-alignment: flex-start;
 
   /* Fill and stroke */
@@ -137,7 +137,6 @@
 
     // Universal, constant properties
     display: flex;
-    width: 100%;
     font-family: inherit;
   }
 

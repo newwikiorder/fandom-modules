@@ -20,18 +20,41 @@ Note: `--themed` namespaced variables are native Fandom variables that we're lev
       <th>Scope</th>
       <th>Selector</th>
       <th>Description</th>
+      <th>Default value</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <td><code>--block-spacing-after</code></td>
-      <td rowspan="10"><code>:root</code></td>
+      <td rowspan="4"><code>:root</code></td>
       <td rowspan="10"><code>.Block</code></td>
       <td>Spacing applied after the block container (<code>margin-bottom</code>).</td>
+      <td><code>1rem</code></td>
     </tr>
     <tr>
       <td><code>--block-interior-spacing</code></td>
       <td>Spacing applied within the block container (<code>padding</code>).</td>
+      <td><code>0</code></td>
+    </tr>
+    <tr>
+      <td><code>--block-horizontal-alignment</code></td>
+      <td>The horizontal alignment of the Block container's contents, in flexbox terms. So left = <code>flex-start</code>, center = <code>center</code>, right = <code>flex-end</code>, etc.</td>
+      <td><code>stretch</code></td>
+    </tr>
+    <tr>
+      <td><code>--block-vertical-alignment</code></td>
+      <td>The vertical alignment of the Block container's contents, in flexbox terms (see above).</td>
+      <td><code>flex-start</code></td>
+    </tr>
+    <tr>
+      <td><code>--block-background-color</code></td>
+      <td>The background color of the Block container (applies to the entire block).</td>
+      <td><code>var(--themed-page-background--windows)</code></td>
+    </tr>
+    <tr>
+      <td><code>--block-background-image</code></td>
+      <td><code>:root</code> or <code>#Block-*</code></td>
+      <td>The background image of the Block container (applies to the entire block). Note that this should normally be used for a specific block, and should thus be set in (scoped to) a specific Block instance's ruleset (e.g. <code>#Block-News</code>).</td>
     </tr>
   </tbody>
 </table>
