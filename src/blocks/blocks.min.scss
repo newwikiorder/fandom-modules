@@ -10,9 +10,8 @@
  * This stylesheet then worries about how and where to apply these variables, so
  * that end-users don't have to sort through all the different selectors or know
  * actual CSS properties.
- *    
-  
- * However, if the Blocks variable API does not support a given customization, and
+ *
+ * If the Blocks variable API does not support a given customization, and
  * if the end-user is familiar with CSS and wants to more granularly customize
  * the Blocks system, they can still write their own CSS by overriding it in
  * Special:CSS.
@@ -132,6 +131,8 @@
   border-right: var(--block-border-right);
   border-bottom: var(--block-border-bottom);
   border-left: var(--block-border-left);
+  // Shape
+  font-family: var(--block-font-family);
 
   // Universal, constant properties.
   display: flex;
@@ -167,12 +168,13 @@
     // Universal, constant properties
     display: flex;
     width: 100%;
+    font-family: inherit;
   }
 
   &__heading {
     font-family: var(--block-heading-font-family);
     font-size: var(--block-heading-font-size) !important;
-    font-weight: var(--block-heading-font-weight);
+    font-weight: var(--block-heading-font-weight) !important;
     color: var(--block-heading-text-color);
     text-transform: var(--block-heading-text-transform);
 
