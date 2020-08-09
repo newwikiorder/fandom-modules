@@ -4,6 +4,10 @@
  * If you do not need to change the values, it is safe to remove altogether.
  *
  * See blocks.scss for more information.
+ *
+ * Note: --themed namespaced variables are native Fandom variables that we're
+ * leveraging here for good defaults. These can, however, be replaced. They're
+ * typically controlled from the Theme Designer if you'd like to be modular.
  */
 
 :root {
@@ -38,6 +42,10 @@
   /* --- Heading (text itself) --- */
   --block-heading-font-family: inherit;
   --block-heading-font-size: 1rem;
+  --block-heading-font-weight: bold;
+  --block-heading-font-variation: none; // small-caps, etc.
+  --block-heading-text-color: var(--themed-text-color);
+  --block-heading-text-transform: none; // uppercase, lowercase, capitalize, etc.
 }
 
 #Block-Example {
