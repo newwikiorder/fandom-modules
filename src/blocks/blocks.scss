@@ -79,6 +79,18 @@
   /* Alignment */
   --block-header-horizontal-alignment: center;
   --block-header-vertical-alignment: center;
+
+  /* Fill and stroke */
+  --block-header-background-color: transparent;
+  --block-header-background-image: none;
+  --block-header-background-size: cover;
+  --block-header-background-position: center;
+  --block-header-border: 1px solid transparent;
+    // "Secret" variables.
+    --block-header-border-top: var(--block-header-border);
+    --block-header-border-right: var(--block-header-border);
+    --block-header-border-bottom: var(--block-header-border);
+    --block-header-border-left: var(--block-header-border);
 }
 
 .Block {
@@ -106,13 +118,13 @@
   border-bottom: var(--block-border-bottom);
   border-left: var(--block-border-left);
 
-  /* Universal, constant properties. */
+  // Universal, constant properties.
   display: flex;
   flex-direction: column;
   overflow: hidden;
   width: 100%;
 
-  /* Children */
+  // --- Children
   &__header {
     // Spacing
     margin:
@@ -128,8 +140,17 @@
     // Alignment
     justify-content: var(--block-header-horizontal-alignment);
     align-items: var(--block-header-vertical-alignment);
+    // Fill and stroke
+    background-color: var(--block-header-background-color);
+    background-image: var(--block-header-background-image);
+    background-size: var(--block-header-background-size);
+    background-position: var(--block-header-background-position);
+    border-top: var(--block-header-border-top);
+    border-right: var(--block-header-border-right);
+    border-bottom: var(--block-header-border-bottom);
+    border-left: var(--block-header-border-left);
 
-    /* Universal, constant properties */
+    // Universal, constant properties
     display: flex;
   }
 }

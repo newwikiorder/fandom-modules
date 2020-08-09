@@ -26,6 +26,12 @@
 
   --block-header-horizontal-alignment: center;
   --block-header-vertical-alignment: center;
+
+  --block-header-background-color: transparent;
+  --block-header-background-image: url();
+  --block-header-background-size: cover;
+  --block-header-background-position: center;
+  --block-header-border: 1px solid transparent;
 }
 
 #Block-Example {
