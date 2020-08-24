@@ -1,0 +1,9 @@
+/**
+ * UCP table header fix.
+ * Description: UCP page wrapper doesn't contain absolutely-positioned elements.
+ * Scope: Edge
+ */
+ 
+.mw-parser-output {
+  position: relative;
+}

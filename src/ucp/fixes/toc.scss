@@ -1,0 +1,10 @@
+/**
+ * UCP table of contents fix.
+ * Description: TOCs include bullet points and extra spacing on UCP.
+ * Scope: Edge
+ */
+
+.toc ul {
+  list-style: none;
+  margin: 0;
+}

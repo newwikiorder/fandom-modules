@@ -1,0 +1,8 @@
+/**
+ * Edge fixes include patches that will presumably be natively fixed by Fandom
+ * at a future point. They should be tracked here and removed as necessary.
+ */
+
+@import "fixes/page-wrapper";
+@import "fixes/table-headers";
+@import "fixes/toc";

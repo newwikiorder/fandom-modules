@@ -1,0 +1,12 @@
+/**
+ * UCP table header fix.
+ * Description: Core UCP styles uses a high-specificity selector to target th elements,
+ * overriding custom background and border-color changes.
+ * Scope: Edge
+ */
+
+.ooui-theme-fandom .article-table th,
+.ooui-theme-fandom .WikiaTable th {
+  background: var(--theme-color);
+  border: 1px solid var(--theme-color);
+}

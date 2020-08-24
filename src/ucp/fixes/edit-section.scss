@@ -1,0 +1,20 @@
+/**
+ * UCP edit section link fix.
+ * Description: Align edit links to the right and enclose in square brackets.
+ * Scope: Elective
+ */
+
+.WikiaMainContent {
+  h2, h3, h4, h5 {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.mw-editsection {
+  margin-left: auto;
+}
+
+.mw-parser-output .mw-editsection-bracket {
+  display: inline;
+}

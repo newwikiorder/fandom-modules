@@ -1,0 +1,11 @@
+/**
+ * UCP selflink fix.
+ * Description: UCP self-referring links no longer become bold or turn black.
+ * Scope: Edge
+ */
+ 
+.mw-selflink {
+  color: #000;
+  font-weight: bold;
+  text-decoration: none;
+}
