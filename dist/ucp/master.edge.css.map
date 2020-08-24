@@ -1,1 +1,1 @@
-{"version":3,"sourceRoot":"","sources":["../../src/ucp/fixes/page-wrapper.scss","../../src/ucp/fixes/table-headers.scss","../../src/ucp/fixes/toc.scss"],"names":[],"mappings":"AAMA,kBACE,yFCEA,8BACA,oCCJF,QACE,gBACA","file":"master.edge.css"}
+{"version":3,"sourceRoot":"","sources":["../../src/ucp/fixes/page-wrapper.scss","../../src/ucp/fixes/table-headers.scss","../../src/ucp/fixes/toc.scss","../../src/ucp/fixes/selflink.scss"],"names":[],"mappings":"AAMA,kBACE,yFCEA,8BACA,oCCJF,QACE,gBACA,SCFF,aACE,WACA,iBACA","file":"master.edge.css"}

@@ -1,7 +1,7 @@
 A collection of CSS rules for custom templates and components used on a variety of Fandom communities.
 
 # Importing
-In order to import stylesheets from GitHub, you have to use [jsdelivr.net](https://jsdelivr.net/). Find the file that you want to import to your wiki in the `dist/` directory of this repo, then replace `MODULE` in the following URL with its name:
+In order to import stylesheets from GitHub, you have to use [jsdelivr.com](https://jsdelivr.com/). Find the file that you want to import to your wiki in the `dist/` directory of this repo, then replace `MODULE` in the following URL with its name:
 
 ```css
 @import url("https://cdn.jsdelivr.net/gh/newwikiorder/fandom-modules@latest/dist/MODULE/MODULE.css");
