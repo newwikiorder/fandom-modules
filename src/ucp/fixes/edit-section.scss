@@ -11,8 +11,12 @@
   }
 }
 
-.mw-editsection {
+.mw-parser-output .mw-editsection {
   margin-left: auto;
+
+  .wds-icon {
+    display: none;
+  }
 }
 
 .mw-parser-output .mw-editsection-bracket {
