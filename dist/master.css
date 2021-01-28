@@ -103,6 +103,10 @@ body.skin-oasis {
   white-space: nowrap;
 }
 
+.mainpage a.external:after {
+  display: none;
+}
+
 /**
  * Universal styles for all portal variants.
  */

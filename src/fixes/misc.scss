@@ -50,3 +50,8 @@
 .wds-is-secondary.wds-button.wds-is-squished {
   white-space: nowrap;
 }
+
+// Removes external link indicator on main page
+.mainpage a.external:after {
+  display: none;
+}

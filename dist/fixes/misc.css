@@ -41,4 +41,8 @@
   white-space: nowrap;
 }
 
+.mainpage a.external:after {
+  display: none;
+}
+
 /*# sourceMappingURL=misc.css.map */
