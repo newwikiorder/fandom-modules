@@ -4,7 +4,7 @@
  * Accompanying CSS for Template:Welcome.
  */
 
-.article-table {
+ .ooui-theme-fandomooui .article-table {
   font-size: .85rem;
   background-color: var(--module-bg);
   border: 1px solid var(--medium-gray);
@@ -35,7 +35,7 @@
   }
 }
 
-.filepage-table {
+.ooui-theme-fandomooui .filepage-table {
   th {
     width: 15%;
     text-align: right;
@@ -49,6 +49,6 @@
   }
 }
 
-.center-images img {
+.ooui-theme-fandomooui .center-images img {
   text-align: center;
 }

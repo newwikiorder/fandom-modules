@@ -1,44 +1,44 @@
 /**
  * Accompanying CSS for Template:Welcome.
  */
-.article-table {
+.ooui-theme-fandomooui .article-table {
   font-size: 0.85rem;
   background-color: var(--module-bg);
   border: 1px solid var(--medium-gray);
   border-collapse: collapse;
 }
-.article-table.align-right {
+.ooui-theme-fandomooui .article-table.align-right {
   float: right;
   margin: 0 0 1rem 1rem;
 }
-.article-table.align-left {
+.ooui-theme-fandomooui .article-table.align-left {
   float: left;
   margin: 0 1rem 1rem 0;
 }
-.article-table td {
+.ooui-theme-fandomooui .article-table td {
   border: 1px solid var(--medium-gray);
 }
-.article-table th {
+.ooui-theme-fandomooui .article-table th {
   border: 1px solid var(--theme-color);
   background-color: var(--theme-color);
   color: var(--text-color);
 }
-.article-table th a {
+.ooui-theme-fandomooui .article-table th a {
   color: var(--text-color);
 }
 
-.filepage-table th {
+.ooui-theme-fandomooui .filepage-table th {
   width: 15%;
   text-align: right;
   border: 1px solid var(--theme-color);
   border-bottom-color: var(--module-bg);
 }
-.filepage-table td {
+.ooui-theme-fandomooui .filepage-table td {
   background-color: var(--module-bg);
   border: 1px solid var(--medium-gray);
 }
 
-.center-images img {
+.ooui-theme-fandomooui .center-images img {
   text-align: center;
 }
 
