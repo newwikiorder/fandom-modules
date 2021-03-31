@@ -615,7 +615,7 @@ body.skin-oasis {
 }
 .portable-infobox .pi-section-tab {
   cursor: pointer;
-  margin: 0 !important;
+  margin: 7px 0 !important;
 }
 .portable-infobox .pi-section-tab.pi-section-active {
   box-shadow: 0 !important;
