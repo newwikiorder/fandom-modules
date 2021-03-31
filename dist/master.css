@@ -591,6 +591,7 @@ body.skin-oasis {
   padding: 8px;
   border-right: 1px solid var(--medium-gray);
   font-weight: bold;
+  align-items: flex-start;
 }
 .portable-infobox .pi-data-value {
   padding: 8px;
