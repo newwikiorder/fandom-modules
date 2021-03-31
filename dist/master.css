@@ -91,10 +91,6 @@ body.skin-oasis {
   background-color: rgba(195, 227, 255, 0.5);
 }
 
-.WikiaArticle ul {
-  list-style: disc;
-}
-
 .WikiaArticle {
   overflow: initial !important;
 }

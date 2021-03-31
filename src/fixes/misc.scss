@@ -36,11 +36,6 @@
   background-color: rgba(195, 227, 255, 0.5);
 }
 
-// Make bullet points round instead of square.
-.WikiaArticle ul {
-  list-style: disc;
-}
-
 // Allows `position: sticky` to work in article elements.
 .WikiaArticle {
   overflow: initial !important;
